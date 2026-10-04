@@ -1,0 +1,98 @@
+run_name: ${RUN_NAME:RAG_Bench}
+
+data:
+  name: github_dev
+  source_type: github
+  expected_questions: 39
+  archives_dir: data/raw/archives
+  documents_dir: data/raw/generated_data/sources
+  gold_questions_file: data/raw/questions.jsonl
+  questions_file: data/evaluation/github_dev/questions.blind.jsonl
+  manifest_file: data/processed/github_documents.jsonl
+  # chunkce 路径的父块 artifact（预建）。文件不存在时退化为 identity 展开并打 warning。
+  parent_blocks_file: data/processed/all_documents.parent_blocks.jsonl
+
+qdrant:
+  url: ${QDRANT_URL:http://localhost:6333}
+  api_key: ${QDRANT_API_KEY:}
+  collection: ${QDRANT_COLLECTION:enterprise_rag_bench}
+  vector_size: ${EMBEDDING_VECTOR_SIZE:1024}
+  distance: Cosine
+
+embedding:
+  provider: openai_compatible
+  model: ${SILICONFLOW_EMBEDDING_MODEL:Qwen/Qwen3-Embedding-0.6B}
+  api_key: ${SILICONFLOW_API_KEY:}
+  base_url: ${SILICONFLOW_BASE_URL:https://api.siliconflow.com/v1}
+
+llm:
+  provider: anthropic_compatible
+  model: ${DEEPSEEK_MODEL:deepseek-chat}
+  api_key: ${DEEPSEEK_API_KEY:}
+  base_url: ${DEEPSEEK_ANTHROPIC_BASE_URL:https://api.deepseek.com/anthropic}
+  temperature: 0.0
+  max_tokens: 1024
+  planning_max_tokens: 512
+  # deepseek-v4-flash 的扩展思考会占满 max_tokens 预算导致输出截断为空/残缺 JSON；
+  # 关闭思考以保证结构化输出（plan/answer）不被截断。
+  thinking_disabled: true
+
+retrieval:
+  # 混合检索通道融合：dense + BM25 经 RRF 合并（dense/bm25/rank_sum 为消融档）。
+  mode: rrf
+  fixed_document_budget: 4
+  dense_candidate_k: 40
+  bm25_candidate_k: 40
+  hybrid_candidate_k: 40
+  text_section_weight: 0.8
+  channel_rrf_k: 60
+  max_queries: 10
+  query_parallelism: 3
+  rrf_k: 60
+  candidate_documents: 32
+  max_documents: 10
+  chunks_per_document: 2
+  # single 策略选档上限：sb4 A/B(rag100_dev_sb4,2026-09-06)确认 budget=4 净 +3(62 vs old 59,
+  # +8 回收/−5 增噪回归),已作新基线。捞回 CE rank 2-4 的 gold 文档。
+  single_document_budget: 4
+  # 每个选中 doc 取多少父 chunk 进生成上下文——minimal 路径的上下文宽度旋钮
+  # （ph2 实验：6→32 = +12，是唯一稳健可复现的杠杆）。
+  max_parent_chunks: 8
+
+graph:
+  recursion_limit: 60
+  # minimal（默认）= 3 阶段最小管线；chunkce = 叶级 CE 干净路径（需 parent_blocks_file）。
+  mode: minimal
+
+experiment:
+  variant: main
+
+features:
+  adaptive_planning: true
+  # 意图路由（软路由）：classify_intent + 每意图检索策略覆盖。planner 是两个图共用的，
+  # 关掉会改变既有基线分数的可复现性。
+  intent_routing: true
+  # 生成后答案覆盖闸门：答案缺失必需值型信号则记入 answer_coverage_missing（诊断用）。
+  answer_coverage_gate: false
+  # 生成后反捏造闸门：答案含不在 question∪evidence 里的技术标识符则记入
+  # answer_grounding_violations（诊断用）。
+  answer_grounding_gate: true
+
+cross_encoder:
+  # online: 硅基流动 /rerank（默认，不再用本地 GPU）；local: 本地 sentence-transformers 后备。
+  provider: ${CROSS_ENCODER_PROVIDER:online}
+  model_path: ${CROSS_ENCODER_MODEL_PATH:}
+  model_id: BAAI/bge-reranker-v2-m3
+  model_tree_sha256: ${CROSS_ENCODER_MODEL_SHA256:}
+  device: cuda
+  base_url: ${SILICONFLOW_BASE_URL:https://api.siliconflow.com/v1}
+  api_key: ${SILICONFLOW_API_KEY:}
+  batch_size: 32
+  predict_timeout_seconds: 120
+
+pricing:
+  input_per_million: null
+  output_per_million: null
+
+output:
+  runs_dir: runs

@@ -1,0 +1,18 @@
+{
+ "run_name": "rag100_frozen_parentce_perquery",
+ "config": "configs/rag100_frozen_parentce_perquery.yaml",
+ "flavor": "strict",
+ "samples": 3,
+ "judged_questions": 8,
+ "raw_correctness_pct": null,
+ "raw_correct": null,
+ "n_flip_to_correct": 2,
+ "flips": [
+  "qst_0290",
+  "qst_0364"
+ ],
+ "ties": [],
+ "degraded": [],
+ "corrected_correctness_pct": null,
+ "corrected_correct": 2
+}

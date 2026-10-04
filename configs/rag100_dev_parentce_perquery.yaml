@@ -1,0 +1,42 @@
+# chunkce 主路径（parent_block_per_query）：子查询合并点后移到父块展开之后。
+# 曾被否决的替代做法是「CE 前就把各子查询的叶 union 成一个池、全局取 top-K」——K 是
+# **全局**预算，上下文宽度被钉死(dev 中位 ~20k 字符)，且靠抬高 K 加宽会吃进合并池
+# rank7-16 的低分块。现做法改为**逐子查询**各取 top-K 叶升父块，再在父块粒度去重
+# 合并——每个子查询贡献自己的 top-K(对该查询意图而言都是高分块)，宽度随子查询数增长。
+# CE 仍对原问题打分(子查询只当检索通道)，故对合并池只打一次分即可。
+# 需先跑（父块索引 artifact）：python scripts/build_parent_blocks.py
+#   --config configs/rag100_dev_parentce_perquery.yaml
+run_name: rag100_dev_parentce_perquery
+
+data:
+  name: rag100_dev
+  source_type: null
+  expected_questions: 100
+  gold_questions_file: data/raw/questions.jsonl
+  questions_file: data/evaluation/rag100_dev/questions.blind.jsonl
+  manifest_file: data/processed/all_documents.jsonl
+  source_scope: [github, confluence, jira, linear]
+  type_targets:
+    basic: 35
+    semantic: 25
+    intra_document_reasoning: 8
+    project_related: 8
+    constrained: 6
+    conflicting_info: 4
+    completeness: 4
+    miscellaneous: 4
+    high_level: 2
+    info_not_found: 4
+  selection_seed: 42
+  parent_blocks_file: data/processed/all_documents.parent_blocks.jsonl
+
+retrieval:
+  chunks_per_document: 4
+  # chunkce 专属（src/graphs/chunkce.py 消费）
+  chunk_pool_cap: 200
+  # **每子查询**的叶预算（非全局）。合并后总块数随子查询数增长，默认 6。
+  expand_after_ce_top_k: 6
+
+graph:
+  mode: chunkce
+

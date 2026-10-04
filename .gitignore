@@ -1,0 +1,42 @@
+# --- IDE / editor ---
+.vscode
+.idea/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# --- Secrets ---
+.env
+
+# --- Large artifacts (weights, vector DB, archives) ---
+models/
+qdrant_local/
+qdrant.zip
+qdrant_rel.json
+
+# --- Datasets & raw/processed data (regenerable / not for VCS) ---
+data/
+external/
+runs/
+paper/data/
+
+# --- Scratch & experiment scripts ---
+scratch/
+_tmp_*
+*.log
+
+# --- Agent / tooling metadata ---
+.claude/
+.code-review-graph/
+experiments/
+docs/
+
+# --- EnterpriseRAG-Bench leaderboard reference (kept in external/) ---
+leaderboard.csv
+systems.yaml

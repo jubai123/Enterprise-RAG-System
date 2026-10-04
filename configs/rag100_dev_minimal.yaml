@@ -1,0 +1,35 @@
+# minimal：3 阶段最小管线（post-hybrid-dev 新基线，全量 100 题 66.0%）。
+# 混合检索之后只做 CE 重排 + 父文档展开，去 selection set-cover / judge / repair / 回环 / entity_links，
+# 答案上下文不二次截断（宽上下文）。依据增量实验结论。
+# single_document_budget=6 即 CE top-k（由离线扫 4/6/8 定，62/71/70，6 为甜点），
+# chunks_per_document=4。main.yaml 已把 graph.mode 默认设为 minimal，此处的 mode 是显式复现锁。
+run_name: rag100_dev_minimal
+
+data:
+  name: rag100_dev
+  source_type: null
+  expected_questions: 100
+  gold_questions_file: data/raw/questions.jsonl
+  questions_file: data/evaluation/rag100_dev/questions.blind.jsonl
+  manifest_file: data/processed/all_documents.jsonl
+  source_scope: [github, confluence, jira, linear]
+  type_targets:
+    basic: 35
+    semantic: 25
+    intra_document_reasoning: 8
+    project_related: 8
+    constrained: 6
+    conflicting_info: 4
+    completeness: 4
+    miscellaneous: 4
+    high_level: 2
+    info_not_found: 4
+  selection_seed: 42
+
+retrieval:
+  single_document_budget: 6
+  chunks_per_document: 4
+
+graph:
+  mode: minimal
+

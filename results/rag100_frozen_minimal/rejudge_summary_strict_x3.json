@@ -1,0 +1,15 @@
+{
+ "run_name": "rag100_frozen_minimal",
+ "config": "configs/rag100_frozen_minimal.yaml",
+ "flavor": "strict",
+ "samples": 3,
+ "judged_questions": 7,
+ "raw_correctness_pct": null,
+ "raw_correct": null,
+ "n_flip_to_correct": 0,
+ "flips": [],
+ "ties": [],
+ "degraded": [],
+ "corrected_correctness_pct": null,
+ "corrected_correct": 0
+}

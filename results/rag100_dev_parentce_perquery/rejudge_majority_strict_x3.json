@@ -1,0 +1,405 @@
+{
+ "run_name": "rag100_dev_parentce_perquery",
+ "flavor": "strict",
+ "samples": 3,
+ "model": "deepseek-v4-flash",
+ "generated_at_utc": "2026-09-10T08:37:32+00:00",
+ "per_question": [
+  {
+   "question_id": "qst_0065",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0110",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0148",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0180",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0187",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0191",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0198",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0210",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0214",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0218",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0221",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0222",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0234",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0244",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0256",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0268",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0282",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0285",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0289",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0327",
+   "votes": [
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "yes": 3,
+   "no": 0,
+   "invalid": [],
+   "majority": "yes",
+   "flipped_to_correct": true
+  },
+  {
+   "question_id": "qst_0353",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0358",
+   "votes": [
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "yes": 3,
+   "no": 0,
+   "invalid": [],
+   "majority": "yes",
+   "flipped_to_correct": true
+  },
+  {
+   "question_id": "qst_0359",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0404",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0405",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0439",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0441",
+   "votes": [
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "yes": 3,
+   "no": 0,
+   "invalid": [],
+   "majority": "yes",
+   "flipped_to_correct": true
+  },
+  {
+   "question_id": "qst_0442",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0471",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  }
+ ],
+ "summary": {
+  "run_name": "rag100_dev_parentce_perquery",
+  "config": "configs/rag100_dev_parentce_perquery.yaml",
+  "flavor": "strict",
+  "samples": 3,
+  "judged_questions": 29,
+  "raw_correctness_pct": 71.0,
+  "raw_correct": 71,
+  "n_flip_to_correct": 3,
+  "flips": [
+   "qst_0327",
+   "qst_0358",
+   "qst_0441"
+  ],
+  "ties": [],
+  "degraded": [],
+  "corrected_correctness_pct": 74.0,
+  "corrected_correct": 74
+ }
+}

@@ -1,0 +1,42 @@
+# frozen：45 题冻结集上的 E 臂(parent_block_per_query)。
+# 与 D 臂(rag100_frozen_parentce_postce)唯一差异是合并在父块展开之后:逐子查询各取
+# top-K 叶升父块，再跨子查询在父块粒度去重合并(见 src/graphs/chunkce.py 的 E 分支)。
+# 目的：D 臂靠抬高全局 K 加宽上下文会吃进合并池 rank7-16 的低分块；E 让每个子查询
+# 贡献自己的 top-K，用各查询自己的高分块把宽度补回来。
+# 对照基线:rag100_frozen_parentce_postce(D 臂)77.8%、rag100_frozen_minimal 84.4%。
+# 需先跑(父块索引与其它臂共用)：python scripts/build_parent_blocks.py --config <this>
+run_name: rag100_frozen_parentce_perquery
+
+data:
+  name: rag100_frozen
+  source_type: null
+  expected_questions: 45
+  gold_questions_file: data/raw/frozen45_questions.jsonl
+  questions_file: data/evaluation/rag100_frozen/questions.blind.jsonl
+  manifest_file: data/processed/all_documents.jsonl
+  source_scope: [github, confluence, jira, linear, slack, gmail, google_drive, hubspot, fireflies]
+  type_targets:
+    basic: 16
+    semantic: 11
+    intra_document_reasoning: 3
+    project_related: 3
+    constrained: 3
+    conflicting_info: 2
+    completeness: 2
+    miscellaneous: 2
+    high_level: 1
+    info_not_found: 2
+  selection_seed: 42
+  parent_blocks_file: data/processed/all_documents.parent_blocks.jsonl
+
+retrieval:
+  mode: rrf
+  chunks_per_document: 4
+  # chunkce 专属（src/graphs/chunkce.py 消费）
+  chunk_pool_cap: 200
+  # expand_after_ce_top_k 是**每子查询**的叶预算(非全局)，合并后总块数随子查询数增长。
+  expand_after_ce_top_k: 6
+
+graph:
+  mode: chunkce
+

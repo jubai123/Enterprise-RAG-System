@@ -1,0 +1,3101 @@
+{
+ "schema_version": 1,
+ "context_top_k": 6,
+ "summary": {
+  "total_wrong": 29,
+  "bucket_counts": {
+   "judge_flip_or_gold_contradiction": 3,
+   "in_context_but_wrong": 8,
+   "ce_select_drop": 2,
+   "fusion_drop": 1,
+   "retrieval_block_miss": 14,
+   "no_expected_doc": 1
+  },
+  "true_residual_generation": 8
+ },
+ "per_question": [
+  {
+   "question_id": "qst_0065",
+   "question_type": "basic",
+   "expected_doc_ids": [
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509"
+   ],
+   "expected_block_ids": [
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::customer-provided artifacts (summarized)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::impact (customer-reported)::block_0": [
+     0.1,
+     0.0
+    ],
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::internal notes::block_0": [
+     0.1,
+     0.0
+    ],
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::issue summary::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0": [
+     0.9,
+     0.778
+    ],
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::text::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::what we need to do::block_0": [
+     0.1,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509": {
+     "best_block": "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0",
+     "best_bi": 0.7777777777777778
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0",
+    "dsid_9ec10e34ef6243e9ad3596e8eb09d0e5::text::block_0",
+    "dsid_ba67599510514278b56a90dea0c2472e::requested outcome::block_0",
+    "dsid_0ca119c28db1431bb993df75885cdab7::text::block_0",
+    "dsid_09784b7a5fa84c7ab6af60247ac2cf78::text::block_0",
+    "dsid_a964ae854bb640ee98273730f629f787::internal checks::block_0",
+    "dsid_a964ae854bb640ee98273730f629f787::action items proposed::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_1eba87b0b11b4f31a006f0cf164b8509::requested outcome for closure::block_0": 1
+   },
+   "evidence_full_present": true,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Provide written acknowledgement + corrected timeline to customer.\n- Share our planned improvements: new component granularity (product surface + region), standard comms templates, and faster time-to"
+  },
+  {
+   "question_id": "qst_0110",
+   "question_type": "basic",
+   "expected_doc_ids": [
+    "dsid_2e4183d040b341cf843366e2c15402af"
+   ],
+   "expected_block_ids": [
+    "dsid_2e4183d040b341cf843366e2c15402af::text::block_1"
+   ],
+   "cov_by_block": {
+    "dsid_2e4183d040b341cf843366e2c15402af::text::block_0": [
+     0.333,
+     0.071
+    ],
+    "dsid_2e4183d040b341cf843366e2c15402af::text::block_1": [
+     0.733,
+     0.571
+    ],
+    "dsid_2e4183d040b341cf843366e2c15402af::text::block_2": [
+     0.2,
+     0.071
+    ]
+   },
+   "doc_best": {
+    "dsid_2e4183d040b341cf843366e2c15402af": {
+     "best_block": "dsid_2e4183d040b341cf843366e2c15402af::text::block_1",
+     "best_bi": 0.5714285714285714
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_405145c78ec0427399173a33ffc7a9ae::emit and dashboard these metrics at tenant and cluster level::block_0",
+    "dsid_9f6994434ef14f0283a0c4371033f6d4::text::block_0",
+    "dsid_2e4183d040b341cf843366e2c15402af::text::block_0",
+    "dsid_8b93eef726fe48c587b20e2d806261c2::text::block_0",
+    "dsid_1b25490ecd0344d9a627dac16b208192::text::block_0",
+    "dsid_c168c0b7902b4a3f8c6c51738c8ce17a::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "gating | applied-ml |\\n| VD-04 | KV cache hitrate during warmup | synthetic replay | hitrate > 70% after 120s | degrade to cached-response fallback | runtime-sre |\\n| VD-05 | Correctness of fallback r"
+  },
+  {
+   "question_id": "qst_0148",
+   "question_type": "basic",
+   "expected_doc_ids": [
+    "dsid_707ad933d7fd447197439ed606abfb26"
+   ],
+   "expected_block_ids": [
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_707ad933d7fd447197439ed606abfb26::backward compatibility and migration::block_0": [
+     0.1,
+     0.0
+    ],
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0": [
+     0.7,
+     0.556
+    ],
+    "dsid_707ad933d7fd447197439ed606abfb26::testing and rollout::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_707ad933d7fd447197439ed606abfb26::text::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_707ad933d7fd447197439ed606abfb26::what this change does::block_0": [
+     0.2,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_707ad933d7fd447197439ed606abfb26": {
+     "best_block": "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0",
+     "best_bi": 0.5555555555555556
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_571e0971f2644bb0815757f3f8bd2445::text::block_0",
+    "dsid_51400a3934c44c82bd96c87ae799834c::text::block_0",
+    "dsid_781f2f6906924c24b41e0a81f69e777f::what changed (summary)::block_0",
+    "dsid_f2807d4224dc49c6b30c3ff84b8d7520::text::block_0",
+    "dsid_a80e0176c0ec4134afabc32c217cd8cd::text::block_0",
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0",
+    "dsid_20dcd8488a6740be8b966865b5288504::text::block_0",
+    "dsid_26585cbcbcea4d40996be1cb99ad6b33::text::block_0",
+    "dsid_4ce9c4e13b0f4975b9c9d4f5893121f2::checklist::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_707ad933d7fd447197439ed606abfb26::checklist::block_0": 6
+   },
+   "evidence_full_present": true,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- [x] Python implementation and tests\n- [x] TypeScript implementation and tests\n- [x] Go implementation and tests\n- [x] Changelogs and version bumps\n- [x] Docs snippet in quickstarts repo pointing to "
+  },
+  {
+   "question_id": "qst_0180",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3"
+   ],
+   "expected_block_ids": [
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::ci and test summary::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::changed files (high level)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::checklist::block_0": [
+     0.125,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::ci and test summary::block_0": [
+     0.25,
+     0.133
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::goals::block_0": [
+     0.125,
+     0.067
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::high-level commits::block_0": [
+     0.188,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::motivation::block_0": [
+     0.375,
+     0.133
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::notes for on-call and sre::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::operational notes::block_0": [
+     0.188,
+     0.133
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::post-merge actions::block_0": [
+     0.125,
+     0.067
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::review thread summary (single string)::block_0": [
+     0.125,
+     0.067
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::risk assessment::block_0": [
+     0.062,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::selected review comments and replies::block_0": [
+     0.25,
+     0.067
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::small illustrative snippet (rehearse proxy header handling)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::text::block_0": [
+     0.062,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::what this pr contains (single-string description)::block_0": [
+     0.188,
+     0.0
+    ],
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3::why this is different from existing rollout features::block_0": [
+     0.062,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_730ed8ee5fc84e0b9be761003b9a60d3": {
+     "best_block": "dsid_730ed8ee5fc84e0b9be761003b9a60d3::ci and test summary::block_0",
+     "best_bi": 0.13333333333333333
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_d0438100e73f4ae5a61ed58f28e83cac::text::block_0",
+    "dsid_633043fe7dc54364803c161283f0e00b::text::block_0",
+    "dsid_95bde704240e44628587396a00f09f14::text::block_0",
+    "dsid_0e24ed772f4544c585bedce556198919::text::block_0",
+    "dsid_0c2d81826dd542438102cccd5b0e4ec9::what this pr does (high level)::block_0",
+    "dsid_ef18fc3d58a14075a2e33e1bab3c8100::what changed (single string)::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- CI pipeline: unit (go test), linters (golangci-lint), integration (docker-compose rehearse harness), e2e (k8s kind).\n- Run 1: unit/lint passed, integration timed out (race in replay sampler), rerun "
+  },
+  {
+   "question_id": "qst_0187",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_a27715e7309c494d812c75cf03bcf916"
+   ],
+   "expected_block_ids": [
+    "dsid_a27715e7309c494d812c75cf03bcf916::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_a27715e7309c494d812c75cf03bcf916::text::block_0": [
+     0.879,
+     0.812
+    ],
+    "dsid_a27715e7309c494d812c75cf03bcf916::text::block_1": [
+     0.061,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_a27715e7309c494d812c75cf03bcf916": {
+     "best_block": "dsid_a27715e7309c494d812c75cf03bcf916::text::block_0",
+     "best_bi": 0.8125
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_cd0d72b813eb4a15a4597fbdebe6d593::scope::block_0",
+    "dsid_c8500a0de62a4d6ebb4e583dc26b44e2::we will ship two alert levels initially::block_0",
+    "dsid_00672cdd05384bd38036415917f2fea4::deliverables::block_0",
+    "dsid_c8500a0de62a4d6ebb4e583dc26b44e2::alert payload must include (at minimum)::block_0",
+    "dsid_0bcaf93eecfd4fc1a8c87c0ec6ec017b::text::block_0",
+    "dsid_0fd3b66845794abca852dcd60477bdcf::text::block_0",
+    "dsid_73dcb25e9e9249f2b9ac9e625b3c4a42::text::block_0",
+    "dsid_011f2d6c32ba4f5d9af8ada11661d982::requirements and constraints::block_0",
+    "dsid_dfaa08666bdf41d883da2bab76b4e30e::core deliverables::block_0",
+    "dsid_1dc6ef71f1774241adb269fea7cec7de::text::block_0",
+    "dsid_0e0994da0d4043699f1e720369b5f894::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Acceptance matrix for Optimize quality shocks and auto-remediation\n\nPurpose: Define a prescriptive acceptance matrix and automated remediation paths for Optimize so that model rollouts and runtime cha"
+  },
+  {
+   "question_id": "qst_0191",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa"
+   ],
+   "expected_block_ids": [
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::customer impact and communication::block_0",
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::timeline and findings::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::contributing factors::block_0": [
+     0.171,
+     0.05
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::customer communication::block_0": [
+     0.098,
+     0.025
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::customer impact and communication::block_0": [
+     0.366,
+     0.225
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::environment::block_0": [
+     0.098,
+     0.025
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::evidence::block_0": [
+     0.122,
+     0.05
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::follow-up verification::block_0": [
+     0.049,
+     0.0
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::immediate remediation::block_0": [
+     0.098,
+     0.025
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::impact::block_0": [
+     0.049,
+     0.0
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::issue summary::block_0": [
+     0.049,
+     0.0
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::logs / telemetry pointers::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::permanent fixes applied (short-term)::block_0": [
+     0.098,
+     0.025
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::root cause hypothesis::block_0": [
+     0.171,
+     0.05
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::temporary workaround provided to customer::block_0": [
+     0.024,
+     0.0
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::text::block_0": [
+     0.073,
+     0.0
+    ],
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::timeline and findings::block_0": [
+     0.341,
+     0.15
+    ]
+   },
+   "doc_best": {
+    "dsid_ef7f1d5cba204b728e1f4d7cddda7daa": {
+     "best_block": "dsid_ef7f1d5cba204b728e1f4d7cddda7daa::customer impact and communication::block_0",
+     "best_bi": 0.225
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_310076b1d70f4d719645d66d00c03d8d::steps to reproduce / investigation notes::block_0",
+    "dsid_b8b751189ce344cbbefe163d53a0404e::customer communication plan::block_0",
+    "dsid_6ca4ada0a2cc4a73aa10d79520dc8714::request::block_0",
+    "dsid_5827b032998b4b2d88162542a9a33e65::text::block_0",
+    "dsid_8a5371543eab4e63b1bdfda55697c009::text::block_0",
+    "dsid_ccaf626687b940f3a7309e09c1ed5c1b::text::block_0",
+    "dsid_c1dece01dc704a2baa1c648075ce179a::issue summary::block_0",
+    "dsid_e85cd62c29614225b04acb4e2c88cfa0::dashboards & links::block_0",
+    "dsid_43874bf71114469389cf3c3516e426e5::telemetry links::block_0",
+    "dsid_3d7796d3bd2246eda9f96c98b578aace::text::block_0",
+    "dsid_445fda755c8d404f958a22dab1fa2d2a::additional context::block_0",
+    "dsid_673a107f77f4486fb8407b9c62375eaf::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Customer was updated on-call and received an interim timeline within 30 minutes. Finance requested formal reconciliation and credits; CS opened this ticket to coordinate post-incident follow-up and "
+  },
+  {
+   "question_id": "qst_0198",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_3ac2c680a56a44e39ddcfd257804de28"
+   ],
+   "expected_block_ids": [
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::immediate mitigation tried::block_0",
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::next steps::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::actual behavior::block_0": [
+     0.148,
+     0.038
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::attachments::block_0": [
+     0.222,
+     0.115
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::environment::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::expected behavior::block_0": [
+     0.111,
+     0.0
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::immediate mitigation tried::block_0": [
+     0.333,
+     0.192
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::impact::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::issue summary::block_0": [
+     0.259,
+     0.077
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::next steps::block_0": [
+     0.519,
+     0.269
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::steps to reproduce (customer-provided)::block_0": [
+     0.185,
+     0.038
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::text::block_0": [
+     0.111,
+     0.0
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::what we checked::block_0": [
+     0.185,
+     0.077
+    ],
+    "dsid_3ac2c680a56a44e39ddcfd257804de28::workaround (customer)::block_0": [
+     0.037,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_3ac2c680a56a44e39ddcfd257804de28": {
+     "best_block": "dsid_3ac2c680a56a44e39ddcfd257804de28::next steps::block_0",
+     "best_bi": 0.2692307692307692
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_117780c3ee9c4cabb67b2087fe3af07f::text::block_0",
+    "dsid_b5c45779f87f46e0bd83ccac5d6ebf65::text::block_0",
+    "dsid_968c7e495e2048c2949e5e6d2d461b70::text::block_0",
+    "dsid_08c5d1ca7dcc49f0bfebf1c77e171400::text::block_0",
+    "dsid_a1b1a060fe7b4dfe912ffc191cbe0ca7::request ids from last run (eu-west)::block_0",
+    "dsid_e76e14a7534c4e539358f63681dfc591::sample logs (redacted)::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Collaborate with edge-proxy vendor to disable coalescing of zero-length keepalives for SSE endpoints, or to preserve final JSON boundaries across renegotiation.\n- Add extra server-side terminal mark"
+  },
+  {
+   "question_id": "qst_0210",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_b4bd83b46612452e858bc02b380082e2"
+   ],
+   "expected_block_ids": [
+    "dsid_b4bd83b46612452e858bc02b380082e2::decision scoring algorithm (summary)::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_b4bd83b46612452e858bc02b380082e2::action mapping (recommended)::block_0": [
+     0.25,
+     0.098
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::appendix a: configuration yaml sample::block_0": [
+     0.019,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::appendix b: links and references::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::appendix c: change history::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::automated bisect integration::block_0": [
+     0.038,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::configuration table (defaults)::block_0": [
+     0.25,
+     0.059
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::decision scoring algorithm (summary)::block_0": [
+     0.577,
+     0.49
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::example: case study (short)::block_0": [
+     0.096,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::inputs required::block_0": [
+     0.038,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::key definitions::block_0": [
+     0.212,
+     0.039
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::ownership and roles::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::procedure: from snapshot to decision (operational runbook)::block_0": [
+     0.154,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::rollback criteria and runbook steps::block_0": [
+     0.077,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::safety checks and hard gates::block_0": [
+     0.058,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::scope::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::summary::block_0": [
+     0.019,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::telemetry contract (minimal required fields)::block_0": [
+     0.038,
+     0.0
+    ],
+    "dsid_b4bd83b46612452e858bc02b380082e2::text::block_0": [
+     0.038,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_b4bd83b46612452e858bc02b380082e2": {
+     "best_block": "dsid_b4bd83b46612452e858bc02b380082e2::decision scoring algorithm (summary)::block_0",
+     "best_bi": 0.49019607843137253
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_2d2171044c8b4bb6b2180d8e3019ca85::text::block_0",
+    "dsid_afc76fd784bc4c7fb1420e21d88528d0::summary::block_0",
+    "dsid_e044274a9d184700bb8cdf9ddb6d9d02::minimal sql snippet to prepare test/control cohorts::block_0",
+    "dsid_5fc7774b86ff4d6f92c40a2bb5ac8b89::text::block_0",
+    "dsid_d7c1267719e849bc8fdc670a798b6f64::text::block_0",
+    "dsid_5fc7774b86ff4d6f92c40a2bb5ac8b89::checks::block_0",
+    "dsid_6adbed0e9ffb4453afa464e8fa37b326::group tenants by risk profile for staged rollouts::block_0",
+    "dsid_a7382d78a83144c9be085200a71d025a::overview::block_1",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::does not apply to::block_0",
+    "dsid_f6b4cb137c444b57bbd4a5d21843d240::out of scope::block_0",
+    "dsid_68cafde4826d456dbe20a5f8aba7cfad::response json example::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [
+    "dsid_b4bd83b46612452e858bc02b380082e2::decision scoring algorithm (summary)::block_0"
+   ],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "fusion_drop",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "We compute three sub-scores and aggregate them into DS (range 0..100):\n\n- StabilityScore (SS): weighted failure density normalized by probe priority. Formula: SS = 100 * sum_p (w_p * (failure_count_p "
+  },
+  {
+   "question_id": "qst_0214",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_303196c831af4d1bb38a1e2546228a09"
+   ],
+   "expected_block_ids": [
+    "dsid_303196c831af4d1bb38a1e2546228a09::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_303196c831af4d1bb38a1e2546228a09::text::block_0": [
+     0.75,
+     0.545
+    ],
+    "dsid_303196c831af4d1bb38a1e2546228a09::text::block_1": [
+     0.333,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_303196c831af4d1bb38a1e2546228a09": {
+     "best_block": "dsid_303196c831af4d1bb38a1e2546228a09::text::block_0",
+     "best_bi": 0.5454545454545454
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_ab7c95772b2d427788bd3be1e4c4100b::text::block_0",
+    "dsid_20fcd44dc44e4bb9a5affcb53c5fb7f4::text::block_0",
+    "dsid_da410d4361b14844a3674a3426b61831::why this ticket exists::block_0",
+    "dsid_5f2b67b0981e4266a6f582043597f2fb::text::block_0",
+    "dsid_c9b7036f5a824228a4396f6ee9b2d2fd::text::block_0",
+    "dsid_e0344b7b9ee34cd694cde8ed1a8aef84::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Capacity triage, forensic telemetry, and scaling rollback plan for Dedicated pools\n\nSummary: On 2026-03-13 we observed a repeatable capacity shortfall affecting a subset of Dedicated pools serving lat"
+  },
+  {
+   "question_id": "qst_0218",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_462ab0251b704d878310f53e13d6f515"
+   ],
+   "expected_block_ids": [
+    "dsid_462ab0251b704d878310f53e13d6f515::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_462ab0251b704d878310f53e13d6f515::text::block_0": [
+     0.565,
+     0.364
+    ]
+   },
+   "doc_best": {
+    "dsid_462ab0251b704d878310f53e13d6f515": {
+     "best_block": "dsid_462ab0251b704d878310f53e13d6f515::text::block_0",
+     "best_bi": 0.36363636363636365
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_e764bed7887a4e17b6701e882378cf7d::text::block_0",
+    "dsid_969389e8e37b45638831ff328050e94b::text::block_0",
+    "dsid_4b53fa518d0748448b166e0444710cf8::text::block_0",
+    "dsid_b51512bd3d694a49aeb204839876cb2f::text::block_0",
+    "dsid_2319951219214437bdd8b2a7efa79016::text::block_0",
+    "dsid_d7b439c92b4c4a558789fc7f52620b3c::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [
+    "dsid_462ab0251b704d878310f53e13d6f515::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_462ab0251b704d878310f53e13d6f515::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_462ab0251b704d878310f53e13d6f515::text::block_0": 38
+   },
+   "evidence_full_present": false,
+   "bucket": "ce_select_drop",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Actionable incident cards + cost-aware rollout controls for private clusters\n\nDesign a compact, action-first incident card and an integrated rollout control surface for Private/VPC clusters that surfa"
+  },
+  {
+   "question_id": "qst_0221",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_5323aeb9f89042c9a62505d409c4d94a"
+   ],
+   "expected_block_ids": [
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::data retention and security notes::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::access request lifecycle::block_0": [
+     0.111,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::benefits quick table::block_0": [
+     0.167,
+     0.059
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::common templates (copy into ticket)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::competency snapshot (example table)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::data retention and security notes::block_0": [
+     0.556,
+     0.294
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::faq (selection)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::hiring checklist (pre-offer)::block_0": [
+     0.278,
+     0.118
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::interview loop (standard for ic / engineering)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::manager 30/60/90 outline (paste into calendar invite)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::manager training and expectations::block_0": [
+     0.167,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::owners and escalation::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::perk highlights::block_0": [
+     0.111,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::primary tooling matrix (ownership and notes)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::promotion rubric (summary)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::purpose and scope::block_0": [
+     0.111,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::quick access checklist (day 1)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::revision history::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::sample cli for engineering access request (manager-initiated)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::sample welcome slack message::block_0": [
+     0.056,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::start date::block_0": [
+     0.167,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::summary::block_0": [
+     0.056,
+     0.0
+    ],
+    "dsid_5323aeb9f89042c9a62505d409c4d94a::text::block_0": [
+     0.0,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_5323aeb9f89042c9a62505d409c4d94a": {
+     "best_block": "dsid_5323aeb9f89042c9a62505d409c4d94a::data retention and security notes::block_0",
+     "best_bi": 0.29411764705882354
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_426645772b534ac4a6af358830cf7982::text::block_0",
+    "dsid_06a311f8aa4c4789af4d6c198d86a317::text::block_0",
+    "dsid_426645772b534ac4a6af358830cf7982::text::block_1",
+    "dsid_3848df9a653f4b2da022ecb753587654::text::block_0",
+    "dsid_6836149a857c4840a19a2836fb7c4453::response::block_0",
+    "dsid_456bacbf96494d0a8360ab5f15a2aa48::accessibility, reasonable adjustments, and remote-first norms::block_0",
+    "dsid_5bbd2e7b2c314ca590d6b953d1a3c781::command examples (curl)::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Managers must ensure ownership transfer of any customer accounts or keys before offboard.\n- For Private deployment engineers, rotate production creds and report to Security within 24 hours.\n\n9) Metr"
+  },
+  {
+   "question_id": "qst_0222",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_36d7605113204cdca94405cb30fc2c10"
+   ],
+   "expected_block_ids": [
+    "dsid_36d7605113204cdca94405cb30fc2c10::available templates (procureflow / confluence templates)::block_0",
+    "dsid_36d7605113204cdca94405cb30fc2c10::purpose and scope::block_0",
+    "dsid_36d7605113204cdca94405cb30fc2c10::summary (quick reference)::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_36d7605113204cdca94405cb30fc2c10::approval matrix and windows::block_0": [
+     0.079,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::audience::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::audit and controls::block_0": [
+     0.158,
+     0.081
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::audit and enforcement::block_0": [
+     0.079,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::available templates (procureflow / confluence templates)::block_0": [
+     0.316,
+     0.189
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::booking and allowable expenses::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::change categories::block_0": [
+     0.079,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::change log for this page::block_0": [
+     0.184,
+     0.054
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::classification table::block_0": [
+     0.079,
+     0.027
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::competitive sourcing and vendor evaluation::block_0": [
+     0.053,
+     0.027
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::contact and ownership::block_0": [
+     0.079,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::contractual controls and slas::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::data change control::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::data handling requirements::block_0": [
+     0.053,
+     0.027
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::example json/yaml snippets::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::exceptions and emergency process::block_0": [
+     0.079,
+     0.054
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::expense reimbursement rules (high level)::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::expense timelines::block_0": [
+     0.105,
+     0.054
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::how to request updates to this gallery::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::offboarding and termination::block_0": [
+     0.105,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::operational readiness and playbooks::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::overview::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::post-change verification::block_0": [
+     0.132,
+     0.108
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::pre-approval::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::procurement thresholds and approvals::block_0": [
+     0.079,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::purpose::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::purpose and scope::block_0": [
+     0.474,
+     0.27
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::related resources and links::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::retention and deletion::block_0": [
+     0.079,
+     0.027
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::roles and responsibilities::block_0": [
+     0.105,
+     0.027
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::rollback policy::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::slos and monitoring::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::standard process (step-by-step)::block_0": [
+     0.053,
+     0.0
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::summary (quick reference)::block_0": [
+     0.342,
+     0.162
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::text::block_0": [
+     0.105,
+     0.081
+    ],
+    "dsid_36d7605113204cdca94405cb30fc2c10::travel safety and insurance::block_0": [
+     0.0,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_36d7605113204cdca94405cb30fc2c10": {
+     "best_block": "dsid_36d7605113204cdca94405cb30fc2c10::purpose and scope::block_0",
+     "best_bi": 0.2702702702702703
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_5973ad14337449d0a0f8139e4ac3ae92::text::block_0",
+    "dsid_f35421860eb64655a9b5d62c344b45b3::text::block_0",
+    "dsid_cb30abd2ebb245358158d6dfb1c651dd::text::block_0",
+    "dsid_c0cc0362bc394346a8445f5753751e18::text::block_0",
+    "dsid_09f6377a3fab47689d6f52b92c666d17::text::block_0",
+    "dsid_b22b2bd5c19940f58372b24895466da8::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "This page consolidates company-wide operational flows and reusable policy artifacts relating to access and permissions, change management, data lifecycle, procurement & expenses, vendor onboarding, tr"
+  },
+  {
+   "question_id": "qst_0234",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_ad58457891774bd7ba480e0bcd13df3a"
+   ],
+   "expected_block_ids": [
+    "dsid_ad58457891774bd7ba480e0bcd13df3a::phases::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_ad58457891774bd7ba480e0bcd13df3a::new endpoints (examples)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad58457891774bd7ba480e0bcd13df3a::phases::block_0": [
+     0.68,
+     0.542
+    ],
+    "dsid_ad58457891774bd7ba480e0bcd13df3a::sample migration cli (internal)::block_0": [
+     0.28,
+     0.042
+    ],
+    "dsid_ad58457891774bd7ba480e0bcd13df3a::text::block_0": [
+     0.28,
+     0.083
+    ]
+   },
+   "doc_best": {
+    "dsid_ad58457891774bd7ba480e0bcd13df3a": {
+     "best_block": "dsid_ad58457891774bd7ba480e0bcd13df3a::phases::block_0",
+     "best_bi": 0.5416666666666666
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_76bdff3fb39a45d985585faa3b0ad2eb::recommended staged migration (small-to-large tenants)::block_0",
+    "dsid_9ddcaaab20e44a96aeadd22c0159b554::text::block_0",
+    "dsid_75393a098ca44803ae097c4b2d543199::text::block_0",
+    "dsid_6c1c15fd0ecc421c8b06a204d9e932ea::migration runbook (step-by-step)::block_0",
+    "dsid_9272a750318a4a56a66921abbd9b5cb9::canary sizing rules and ramp schedule::block_0",
+    "dsid_36d04c96ad6348dd8d31ebbc9c1847ad::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "1) Preparation (2 weeks before canary)\n- Identify tenants for staged rollout; prefer 5–10% of traffic slice for initial canary.\n- Verify that the customer has telemetry-forwarding >= 99% and healthche"
+  },
+  {
+   "question_id": "qst_0244",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0"
+   ],
+   "expected_block_ids": [
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::issue summary::block_0",
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::observed logs/snippets::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::environment::block_0": [
+     0.023,
+     0.0
+    ],
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::follow-ups::block_0": [
+     0.159,
+     0.047
+    ],
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::impact::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::issue summary::block_0": [
+     0.25,
+     0.163
+    ],
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::observed logs/snippets::block_0": [
+     0.636,
+     0.326
+    ],
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::steps to reproduce::block_0": [
+     0.25,
+     0.093
+    ],
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::text::block_0": [
+     0.136,
+     0.07
+    ]
+   },
+   "doc_best": {
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0": {
+     "best_block": "dsid_37c24c697d9d462fad0e3afeeea9d8c0::observed logs/snippets::block_0",
+     "best_bi": 0.32558139534883723
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_c3ab94fe217d4dfe9c6e0b88a40cb6dd::text::block_0",
+    "dsid_dced9d2508b54c45a65b20af24dc999f::text::block_0",
+    "dsid_85cd5df03df744d5811b1f0a388c4652::text::block_0",
+    "dsid_931d3d5385c64dd18aee76e4e4c5fccc::impact::block_0",
+    "dsid_5227879314694523928b6bf36d523dc0::text::block_0",
+    "dsid_af91b3e858dd48e981bb63e30c26a84d::issue summary::block_0",
+    "dsid_fe044fa5949a4a539645d9900965a75d::text::block_0",
+    "dsid_ca15f318846949608e88005cc49a5a8f::steps performed::block_0",
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::text::block_0",
+    "dsid_ca15f318846949608e88005cc49a5a8f::environment::block_0",
+    "dsid_ca15f318846949608e88005cc49a5a8f::fixes applied::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::issue summary::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::issue summary::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_37c24c697d9d462fad0e3afeeea9d8c0::issue summary::block_0": 18
+   },
+   "evidence_full_present": false,
+   "bucket": "ce_select_drop",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- identity-proxy: \"ERROR auth: issuer mismatch: token_iss=https://okta-old.redwood/oauth2/default, expected=https://okta-new.redwood/oauth2/default\"\n- console-service: \"RBAC: no matching grants for pr"
+  },
+  {
+   "question_id": "qst_0256",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_df40f9a66b914f29839322d19f8922bb"
+   ],
+   "expected_block_ids": [
+    "dsid_df40f9a66b914f29839322d19f8922bb::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_df40f9a66b914f29839322d19f8922bb::text::block_0": [
+     0.676,
+     0.364
+    ]
+   },
+   "doc_best": {
+    "dsid_df40f9a66b914f29839322d19f8922bb": {
+     "best_block": "dsid_df40f9a66b914f29839322d19f8922bb::text::block_0",
+     "best_bi": 0.36363636363636365
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_401abb0f90e0439bb9cf586e744712cb::text::block_0",
+    "dsid_8e435e28774a4a819f7757da32fd0e15::text::block_0",
+    "dsid_5c50e602b0334be4a1fb1bcc8af11d58::text::block_0",
+    "dsid_817ba41dfb3e4189b631bc9de18ee722::relevant logs/snippets::block_0",
+    "dsid_e009e05c6487438da97f997dec5ae39c::text::block_0",
+    "dsid_ac81703059ff4f9f917679dd412207f6::immediate mitigation taken::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Cohort signal loss during synchronized canary flip caused unpinned routing to quantized variant\n\nIssue summary: During a synchronized canary roll for redwood-v1-large we observed that a small customer"
+  },
+  {
+   "question_id": "qst_0268",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_a990e708840f481795741cfd3fb55691"
+   ],
+   "expected_block_ids": [
+    "dsid_a990e708840f481795741cfd3fb55691::timeline and findings::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_a990e708840f481795741cfd3fb55691::environment::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::fixes applied::block_0": [
+     0.29,
+     0.1
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::impact::block_0": [
+     0.065,
+     0.0
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::initial mitigation and timeline::block_0": [
+     0.226,
+     0.067
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::issue summary::block_0": [
+     0.129,
+     0.033
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::observed behavior::block_0": [
+     0.194,
+     0.033
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::steps to reproduce (internal)::block_0": [
+     0.161,
+     0.033
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::text::block_0": [
+     0.129,
+     0.033
+    ],
+    "dsid_a990e708840f481795741cfd3fb55691::timeline and findings::block_0": [
+     0.581,
+     0.333
+    ]
+   },
+   "doc_best": {
+    "dsid_a990e708840f481795741cfd3fb55691": {
+     "best_block": "dsid_a990e708840f481795741cfd3fb55691::timeline and findings::block_0",
+     "best_bi": 0.3333333333333333
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_97e6af78e5ea4622876f210ce190868e::logs / observations at time of spike::block_0",
+    "dsid_576496e2926e4747980636f3ee519243::text::block_0",
+    "dsid_46673c0aed2445bba9152d27087585e1::text::block_0",
+    "dsid_f9e39551b13f4b7bb75fb223564c8050::relevant logs & links::block_0",
+    "dsid_2d786c273268454b85c10633a0e61fbb::text::block_0",
+    "dsid_3ea40e1fa3fc449fbf48ba6a94801808::issue summary::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- 2026-03-09 17:22 UTC: first elevated 5xx and streaming truncations for Cinder Labs observed (api-gateway metrics + their telemetry).\n- Root cause hypothesis: interaction between a recent kernel-sele"
+  },
+  {
+   "question_id": "qst_0282",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588"
+   ],
+   "expected_block_ids": [
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588::relevant logs/traces (sample)::block_0",
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588::steps to reproduce::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588::relevant logs/traces (sample)::block_0": [
+     0.686,
+     0.559
+    ],
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588::steps to reproduce::block_0": [
+     0.371,
+     0.206
+    ],
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588::text::block_0": [
+     0.343,
+     0.118
+    ]
+   },
+   "doc_best": {
+    "dsid_9adc7c1c81f54e0a88d0e0bee59a6588": {
+     "best_block": "dsid_9adc7c1c81f54e0a88d0e0bee59a6588::relevant logs/traces (sample)::block_0",
+     "best_bi": 0.5588235294117647
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_5c50e602b0334be4a1fb1bcc8af11d58::text::block_0",
+    "dsid_01e7470e19d3468c8155b25fa58f026a::text::block_0",
+    "dsid_c297cf0ecc594b1a870da5c8a4d471c1::text::block_0",
+    "dsid_f30e41ac9021447b94eaed3b00f037ec::text::block_0",
+    "dsid_72c5755c70fd4d68bcef00b8e2c2da72::text::block_0",
+    "dsid_826216f703bd47bab0f1d4ec826a340e::text::block_0",
+    "dsid_401abb0f90e0439bb9cf586e744712cb::text::block_0",
+    "dsid_dc2d3453b6bf44ca8c04f826eab7ae68::text::block_0",
+    "dsid_aa9f41300c244d34a49e66c73256957a::impact details::block_0",
+    "dsid_788864eea12b49a48d7032d744ab6c09::environment::block_0",
+    "dsid_4148dbc886e749ebb326f6c7331b6de7::customer ask::block_0",
+    "dsid_5827b032998b4b2d88162542a9a33e65::text::block_0",
+    "dsid_fb074d8b655648ac90ab98e2dd2c82d3::environment::block_0",
+    "dsid_99775ac5c6344f5ba1aa865f5a9ebbed::issue summary::block_0",
+    "dsid_7727c34f75384aeda08bdf1175d578c9::environment::block_0",
+    "dsid_6803f3f40fcc49ce890763ce91272a5f::text::block_0",
+    "dsid_c4676780af044f6b976b70afb91a804e::impact::block_0",
+    "dsid_d83b967679c640b4989d4aed0048f511::environment::block_0",
+    "dsid_11b00d8ef086462787e43710b8b86c58::environment::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- trace: us-east:trace-20260310-14:12:35: t=trace-8af3cf (session token: s-9c2b). Route decision: edge-proxy rate-shed priority=low -> routing-layer selected fallback route canary/gpt-large-v1-canary."
+  },
+  {
+   "question_id": "qst_0285",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2"
+   ],
+   "expected_block_ids": [
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::design summary::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::acceptance criteria::block_0": [
+     0.11,
+     0.024
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::design summary::block_0": [
+     0.543,
+     0.325
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::key thresholds and slos (proposed)::block_0": [
+     0.157,
+     0.087
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::open implementation tasks::block_0": [
+     0.039,
+     0.008
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::rollout plan::block_0": [
+     0.047,
+     0.008
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::telemetry and metrics to add::block_0": [
+     0.055,
+     0.0
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::text::block_0": [
+     0.236,
+     0.079
+    ],
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2::trade-offs and risks::block_0": [
+     0.039,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_59ff5fe3de4c4a3691700ce678801bd2": {
+     "best_block": "dsid_59ff5fe3de4c4a3691700ce678801bd2::design summary::block_0",
+     "best_bi": 0.3253968253968254
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_c19ee72e1f254216bc4a40350e922513::text::block_0",
+    "dsid_da1ff7eccfcd498b8bf96ebc39e32244::text::block_0",
+    "dsid_d656bc8f554847cb855a1159dd7d0943::text::block_0",
+    "dsid_4bcede82014a48acb9db22d2a8ae457c::text::block_0",
+    "dsid_2b30c708b3be442fa8d560ca65f194b5::text::block_0",
+    "dsid_7700e0f9f8494412b362568c2c60009d::proposed approach (high level)::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- SLO Sentinel: a central controller that ingests region-level telemetry (p50/p95/p99, CPU/GPU utilization, queue depth, capacity tokens) and computes a risk score per region using an EWMA trend + sho"
+  },
+  {
+   "question_id": "qst_0289",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_5d8045f7d37d41b99605880834c17329"
+   ],
+   "expected_block_ids": [
+    "dsid_5d8045f7d37d41b99605880834c17329::open risks noted::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_5d8045f7d37d41b99605880834c17329::environment::block_0": [
+     0.095,
+     0.049
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::fixes implemented::block_0": [
+     0.19,
+     0.049
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::follow-ups / action items (owners and eta)::block_0": [
+     0.095,
+     0.0
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::hypotheses validated by logs::block_0": [
+     0.095,
+     0.0
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::impact::block_0": [
+     0.119,
+     0.0
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::issue summary::block_0": [
+     0.143,
+     0.049
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::logs / evidence pointers::block_0": [
+     0.262,
+     0.073
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::open risks noted::block_0": [
+     0.452,
+     0.195
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::steps to reproduce (observed pattern)::block_0": [
+     0.262,
+     0.122
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::temporary mitigations applied during incident::block_0": [
+     0.143,
+     0.024
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::text::block_0": [
+     0.024,
+     0.0
+    ],
+    "dsid_5d8045f7d37d41b99605880834c17329::timestamps and findings::block_0": [
+     0.429,
+     0.146
+    ]
+   },
+   "doc_best": {
+    "dsid_5d8045f7d37d41b99605880834c17329": {
+     "best_block": "dsid_5d8045f7d37d41b99605880834c17329::open risks noted::block_0",
+     "best_bi": 0.1951219512195122
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_c7769086c6604964a00c16e9aa933ffc::text::block_0",
+    "dsid_fd3f961d8f6a4e39a6fbc039172061c0::requested::block_1",
+    "dsid_2d786c273268454b85c10633a0e61fbb::steps to reproduce (from support pov)::block_0",
+    "dsid_44d571becf7a4fffa1e7c563ca13c7bc::additional customer notes::block_0",
+    "dsid_2d786c273268454b85c10633a0e61fbb::text::block_0",
+    "dsid_655926d0318741d9afb190cc0f0eac89::text::block_0",
+    "dsid_f3e6edec6f4947a5bd5aa7fd557d7d2b::text::block_0",
+    "dsid_fd3f961d8f6a4e39a6fbc039172061c0::text::block_0",
+    "dsid_269469b1441c415da28b7dacabf9282a::impact::block_0",
+    "dsid_4c543d28e6554d2cb98cd8aa4982f281::notes::block_0",
+    "dsid_f2233a167e5f439f98b3496cb2d70f6e::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Similar mis-specified client retry windows could retrigger duplicate ack behavior unless idempotency tokens are enforced end-to-end.\n\n2026-03-10 09:15 - Alex Morgan (SRE): Acknowledged incident; piv"
+  },
+  {
+   "question_id": "qst_0327",
+   "question_type": "intra_document_reasoning",
+   "expected_doc_ids": [
+    "dsid_69e745b76aa34eab8721ba0c88482ec0"
+   ],
+   "expected_block_ids": [
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0",
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1"
+   ],
+   "cov_by_block": {
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0": [
+     0.588,
+     0.5
+    ],
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1": [
+     0.471,
+     0.312
+    ]
+   },
+   "doc_best": {
+    "dsid_69e745b76aa34eab8721ba0c88482ec0": {
+     "best_block": "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0",
+     "best_bi": 0.5
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0",
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1",
+    "dsid_63ff9a2868b444c897f317d9849b94d9::text::block_0",
+    "dsid_c5847d85d323446ba45ac6a337b5fe9d::billing and packaging implications (summary)::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0",
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0",
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1"
+   ],
+   "expected_in_union_pool": [
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0",
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_0": 1,
+    "dsid_69e745b76aa34eab8721ba0c88482ec0::text::block_1": 2
+   },
+   "evidence_full_present": true,
+   "bucket": "judge_flip_or_gold_contradiction",
+   "majority_verdict": "yes",
+   "flipped_to_correct": true,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Unified Inference Consumption Paradigm — Product Overview and Roadmap\n\nSummary\n\nPurpose: This document defines the \"Unified Inference Consumption Paradigm\" (UICP) — a product-level model that unifies "
+  },
+  {
+   "question_id": "qst_0353",
+   "question_type": "project_related",
+   "expected_doc_ids": [
+    "dsid_a3f94972391244f38ef773c05926af83",
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4"
+   ],
+   "expected_block_ids": [
+    "dsid_a3f94972391244f38ef773c05926af83::rationale::block_0",
+    "dsid_a3f94972391244f38ef773c05926af83::the key design tension is baseline choice::block_0",
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_a3f94972391244f38ef773c05926af83::alerts clear only when performance returns closer to baseline::block_0": [
+     0.091,
+     0.026
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::baselines and regressions are computed for::block_0": [
+     0.156,
+     0.039
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::cons::block_0": [
+     0.312,
+     0.118
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::for each metric m and key k in each evaluation window w::block_0": [
+     0.065,
+     0.0
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::if sample requirements are not met::block_0": [
+     0.026,
+     0.013
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::incident-bot dedupes based on::block_0": [
+     0.286,
+     0.105
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::notes::block_0": [
+     0.182,
+     0.039
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::pros::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::rationale::block_0": [
+     0.312,
+     0.197
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::text::block_0": [
+     0.117,
+     0.013
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::the key design tension is baseline choice::block_0": [
+     0.519,
+     0.263
+    ],
+    "dsid_a3f94972391244f38ef773c05926af83::two alert levels exist::block_0": [
+     0.104,
+     0.013
+    ],
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0": [
+     0.442,
+     0.184
+    ],
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::several labels unintentionally increased cardinality::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::specifically::block_0": [
+     0.182,
+     0.026
+    ],
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::text::block_0": [
+     0.195,
+     0.039
+    ],
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::this caused::block_0": [
+     0.208,
+     0.039
+    ],
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::we changed behavior from::block_0": [
+     0.039,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_a3f94972391244f38ef773c05926af83": {
+     "best_block": "dsid_a3f94972391244f38ef773c05926af83::the key design tension is baseline choice::block_0",
+     "best_bi": 0.2631578947368421
+    },
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4": {
+     "best_block": "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0",
+     "best_bi": 0.18421052631578946
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0",
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::text::block_0",
+    "dsid_a3f94972391244f38ef773c05926af83::cons::block_0",
+    "dsid_6d5cbbe19ee94f4c882a2213ed3ab2a8::override guidance::block_0",
+    "dsid_6d5cbbe19ee94f4c882a2213ed3ab2a8::default sev1 triggers::block_0",
+    "dsid_5c9ec6288a614511b672ada5bcf56598::minimum sample size calibration::block_0",
+    "dsid_bc97f9911d9e4cc4bc6efc4db7ca495b::runtime performance regressions are often introduced by::block_0",
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::this caused::block_0",
+    "dsid_bc97f9911d9e4cc4bc6efc4db7ca495b::operationally::block_0",
+    "dsid_7517b80eb19b439090cc2df26bde7f48::confirm all of the following::block_0",
+    "dsid_0962b0f63c784e0cb59b083e8cdfb50d::if perf-suite shows regression but production slos are stable::block_0",
+    "dsid_e54ef48bae78474684a957cf613d47d5::in any escalation, include::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_58bdb9f3bb4241e089f4f2b102765db4::actions taken during the incident::block_0": 1
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- A **fixed baseline** is stable and easy to reason about during rollouts, but can become stale as hardware/driver stacks and workloads evolve.\n- A **rolling baseline** adapts over time, but can drift"
+  },
+  {
+   "question_id": "qst_0358",
+   "question_type": "project_related",
+   "expected_doc_ids": [
+    "dsid_330be20dd4224d8dad24eb633121ba06",
+    "dsid_c70d63e14aa84195aec43820c018f8b9",
+    "dsid_f952b60df24d4736b831a643993aee67",
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf"
+   ],
+   "expected_block_ids": [
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_0",
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1",
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0",
+    "dsid_f952b60df24d4736b831a643993aee67::v1 overhead adders::block_0",
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_330be20dd4224d8dad24eb633121ba06::backfills are used when::block_0": [
+     0.315,
+     0.121
+    ],
+    "dsid_330be20dd4224d8dad24eb633121ba06::declare an incident when::block_0": [
+     0.094,
+     0.01
+    ],
+    "dsid_330be20dd4224d8dad24eb633121ba06::file a ticket (linear/jira) when::block_0": [
+     0.013,
+     0.0
+    ],
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_0": [
+     0.436,
+     0.205
+    ],
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1": [
+     0.403,
+     0.175
+    ],
+    "dsid_330be20dd4224d8dad24eb633121ba06::text::block_0": [
+     0.104,
+     0.017
+    ],
+    "dsid_330be20dd4224d8dad24eb633121ba06::this runbook applies to::block_0": [
+     0.057,
+     0.007
+    ],
+    "dsid_c70d63e14aa84195aec43820c018f8b9::non-allowed exclusions::block_0": [
+     0.272,
+     0.091
+    ],
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0": [
+     0.419,
+     0.202
+    ],
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_1": [
+     0.326,
+     0.148
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::any changes to::block_0": [
+     0.114,
+     0.027
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::costs are grouped into pools prior to allocation::block_0": [
+     0.117,
+     0.017
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::excluded::block_0": [
+     0.02,
+     0.003
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::excluded costs (v1)::block_0": [
+     0.027,
+     0.003
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::finance reporting commonly requires rollups::block_0": [
+     0.151,
+     0.02
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::for each monthly/quarterly reporting cycle::block_0": [
+     0.084,
+     0.013
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::included::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::included costs (v1)::block_0": [
+     0.054,
+     0.01
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::monthly process::block_0": [
+     0.161,
+     0.02
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::rationale::block_0": [
+     0.017,
+     0.0
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::text::block_0": [
+     0.084,
+     0.02
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::the dashboard supports drilldowns by::block_0": [
+     0.007,
+     0.0
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::the kpi is considered finance-reportable only if::block_0": [
+     0.064,
+     0.007
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::token measurement source::block_0": [
+     0.04,
+     0.003
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::v1 overhead adders::block_0": [
+     0.211,
+     0.057
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::v1 policy::block_0": [
+     0.077,
+     0.007
+    ],
+    "dsid_f952b60df24d4736b831a643993aee67::when these gates fail, the dashboard must either::block_0": [
+     0.074,
+     0.024
+    ],
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::text::block_0": [
+     0.134,
+     0.034
+    ],
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::the dashboard can show a confidence badge computed from::block_0": [
+     0.238,
+     0.067
+    ],
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::ueas is designed to be::block_0": [
+     0.188,
+     0.071
+    ],
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::ueas produces two layers of outputs in the warehouse::block_0": [
+     0.268,
+     0.091
+    ],
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::ueas stamps every output row with::block_0": [
+     0.05,
+     0.013
+    ],
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0": [
+     0.312,
+     0.098
+    ]
+   },
+   "doc_best": {
+    "dsid_330be20dd4224d8dad24eb633121ba06": {
+     "best_block": "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_0",
+     "best_bi": 0.2053872053872054
+    },
+    "dsid_c70d63e14aa84195aec43820c018f8b9": {
+     "best_block": "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0",
+     "best_bi": 0.20202020202020202
+    },
+    "dsid_f952b60df24d4736b831a643993aee67": {
+     "best_block": "dsid_f952b60df24d4736b831a643993aee67::v1 overhead adders::block_0",
+     "best_bi": 0.05723905723905724
+    },
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf": {
+     "best_block": "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0",
+     "best_bi": 0.09764309764309764
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1",
+    "dsid_9302ede825f6415a9d742824e882b8d8::go/no-go criteria::block_0",
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0",
+    "dsid_330be20dd4224d8dad24eb633121ba06::backfills are used when::block_0",
+    "dsid_39ce4410a60a4f2e8d36051312d6a86a::notes::block_0",
+    "dsid_1cdeab0ff7e54b34a0f7e3b28d91427e::where::block_0",
+    "dsid_3115121c62804064a447789d80e2f7ba::kv cache pressure (decode state / memory)::block_0",
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0",
+    "dsid_1cdeab0ff7e54b34a0f7e3b28d91427e::tier is derived from a prioritized set of signals::block_0",
+    "dsid_c5aa2304cf9f42c09c5954a80f65ae32::log the following events (internal analytics)::block_0",
+    "dsid_39ce4410a60a4f2e8d36051312d6a86a::text::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1",
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0",
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1",
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0",
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_0",
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1",
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0",
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0",
+    "dsid_f952b60df24d4736b831a643993aee67::v1 overhead adders::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_330be20dd4224d8dad24eb633121ba06::non-scope::block_1": 1,
+    "dsid_c70d63e14aa84195aec43820c018f8b9::text::block_0": 3,
+    "dsid_858fd59a63d64f5e81a2b8482ba64dbf::where::block_0": 8
+   },
+   "evidence_full_present": false,
+   "bucket": "judge_flip_or_gold_contradiction",
+   "majority_verdict": "yes",
+   "flipped_to_correct": true,
+   "doc_recall_pct": 75.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Customer-facing billing disputes (route to Support/Finance; use the reconciliation report as input)\n- Feature requests / new drilldowns (file a Linear ticket under the Unit Economics epic)\n\n## Owner"
+  },
+  {
+   "question_id": "qst_0359",
+   "question_type": "project_related",
+   "expected_doc_ids": [
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b",
+    "dsid_ae455bffe226412c9973991ef2d34a72",
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e",
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40",
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f",
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6"
+   ],
+   "expected_block_ids": [
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0",
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0",
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0",
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::headers::block_0",
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0",
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::notes::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::additionally, the api must set::block_0": [
+     0.104,
+     0.045
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::all residency blocks must set::block_0": [
+     0.075,
+     0.008
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::approved templates (gateway selects based on subcode)::block_0": [
+     0.201,
+     0.06
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::exception::block_0": [
+     0.082,
+     0.03
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::for residency policy violations, the api must return::block_0": [
+     0.037,
+     0.015
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::for streaming endpoints (sse / chunked responses)::block_0": [
+     0.09,
+     0.03
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::messages must::block_0": [
+     0.06,
+     0.015
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::non-compliant behavior (explicitly disallowed)::block_0": [
+     0.134,
+     0.045
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::notes::block_0": [
+     0.082,
+     0.0
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::prior behavior in similar policy blocks has been inconsistent::block_0": [
+     0.067,
+     0.0
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::rationale::block_0": [
+     0.104,
+     0.045
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::response headers::block_0": [
+     0.007,
+     0.0
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::response json body::block_0": [
+     0.075,
+     0.008
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks must::block_0": [
+     0.09,
+     0.015
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0": [
+     0.41,
+     0.188
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::text::block_0": [
+     0.127,
+     0.03
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::this contract is used by::block_0": [
+     0.09,
+     0.015
+    ],
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::we need a stable contract that::block_0": [
+     0.037,
+     0.008
+    ],
+    "dsid_ae455bffe226412c9973991ef2d34a72::notes::block_0": [
+     0.328,
+     0.105
+    ],
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0": [
+     0.366,
+     0.15
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0": [
+     0.343,
+     0.135
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::explicitly not included (v1)::block_0": [
+     0.172,
+     0.015
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::for streaming endpoints::block_0": [
+     0.261,
+     0.06
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::guidance::block_0": [
+     0.022,
+     0.0
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::messages must::block_0": [
+     0.06,
+     0.0
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::optional fields (public, when available and safe)::block_0": [
+     0.007,
+     0.0
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::python requirement (initial)::block_0": [
+     0.09,
+     0.0
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::required fields (public)::block_0": [
+     0.052,
+     0.008
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::text::block_0": [
+     0.224,
+     0.083
+    ],
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::ts/js requirement (follow-up but included in contract)::block_0": [
+     0.119,
+     0.008
+    ],
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::error code::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::headers::block_0": [
+     0.433,
+     0.173
+    ],
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::http status::block_0": [
+     0.067,
+     0.015
+    ],
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::response body (json, non-streaming)::block_0": [
+     0.082,
+     0.0
+    ],
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::text::block_0": [
+     0.209,
+     0.068
+    ],
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0": [
+     0.328,
+     0.09
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::actual behavior::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::expected behavior (per adr-022)::block_0": [
+     0.09,
+     0.023
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::impact::block_0": [
+     0.03,
+     0.0
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::issue summary::block_0": [
+     0.142,
+     0.038
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::notes::block_0": [
+     0.381,
+     0.211
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::repro curl::block_0": [
+     0.06,
+     0.008
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::repro steps (support validated)::block_0": [
+     0.06,
+     0.008
+    ],
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::text::block_0": [
+     0.104,
+     0.008
+    ]
+   },
+   "doc_best": {
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b": {
+     "best_block": "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0",
+     "best_bi": 0.18796992481203006
+    },
+    "dsid_ae455bffe226412c9973991ef2d34a72": {
+     "best_block": "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0",
+     "best_bi": 0.15037593984962405
+    },
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e": {
+     "best_block": "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0",
+     "best_bi": 0.13533834586466165
+    },
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40": {
+     "best_block": "dsid_2d0330be987e4163bfd9c42c69bc1e40::headers::block_0",
+     "best_bi": 0.17293233082706766
+    },
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f": {
+     "best_block": "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0",
+     "best_bi": 0.09022556390977443
+    },
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6": {
+     "best_block": "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::notes::block_0",
+     "best_bi": 0.21052631578947367
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0",
+    "dsid_ae455bffe226412c9973991ef2d34a72::notes::block_0",
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0",
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0",
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::text::block_0",
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0",
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0",
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0",
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::notes::block_0",
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::headers::block_0",
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0",
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0",
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0",
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::notes::block_0",
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::headers::block_0",
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0",
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0",
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0",
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_617d538c79334f4b9ddfd5c50c05ee4b::sdks should::block_0": 3,
+    "dsid_ae455bffe226412c9973991ef2d34a72::text::block_0": 4,
+    "dsid_d67b4ea2d8834799ae617b1ccddf1f6e::docs must include::block_0": 6,
+    "dsid_2d0330be987e4163bfd9c42c69bc1e40::headers::block_0": 21,
+    "dsid_5b0c65ca162a43a0938bebabe9b1d53f::text::block_0": 1,
+    "dsid_0bebeaedbe794ec38ae1d6f4ddd5c2b6::notes::block_0": 16
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 83.33,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Provide a short default suggestion in docs/examples: “Check Console → Settings → Data residency.”\n- Avoid automatically switching endpoints/regions unless the customer explicitly opts in.\n\n## Error "
+  },
+  {
+   "question_id": "qst_0404",
+   "question_type": "constrained",
+   "expected_doc_ids": [
+    "dsid_ad70fa7335294e2988193e2a6645a5ba",
+    "dsid_8f0301d7b2414031b392da5566f98ce6"
+   ],
+   "expected_block_ids": [
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::fast triage checklist (ordered)::block_0",
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::automated verification playbooks (ci hooks)::block_0": [
+     0.148,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::contact and ownership notes::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::decision matrix for rollback vs. targeted repair::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::fast triage checklist (ordered)::block_0": [
+     0.333,
+     0.231
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::ownership and escalation map::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::post-incident activities::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::quick glossary::block_0": [
+     0.111,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::references and related pages::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::repair options (short-term to long-term)::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::scope and goals::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::signal sources and thresholds (table)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::summary::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::text::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::verification checklist and artifacts to collect::block_0": [
+     0.111,
+     0.038
+    ],
+    "dsid_ad70fa7335294e2988193e2a6645a5ba::why this matters::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::developer checklist for model-onboarding owners::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::document maintenance::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::evaluation harness and anchored probes::block_0": [
+     0.148,
+     0.077
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::failure modes and automated rollback behavior::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::goals and scope::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::key concepts and definitions::block_0": [
+     0.222,
+     0.077
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::notes and rationale::block_0": [
+     0.037,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0": [
+     0.407,
+     0.231
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::ownership and escalation::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::regression triage integration::block_0": [
+     0.148,
+     0.038
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::related pages and artifacts::block_0": [
+     0.148,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::rollout and handoff playbook (step-by-step)::block_0": [
+     0.222,
+     0.115
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::routing policy matrix (example)::block_0": [
+     0.296,
+     0.038
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::runtime configuration examples (text yaml presented as code)::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::summary::block_0": [
+     0.185,
+     0.077
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::telemetry and metrics (minimum set)::block_0": [
+     0.074,
+     0.0
+    ],
+    "dsid_8f0301d7b2414031b392da5566f98ce6::text::block_0": [
+     0.148,
+     0.077
+    ]
+   },
+   "doc_best": {
+    "dsid_ad70fa7335294e2988193e2a6645a5ba": {
+     "best_block": "dsid_ad70fa7335294e2988193e2a6645a5ba::fast triage checklist (ordered)::block_0",
+     "best_bi": 0.23076923076923078
+    },
+    "dsid_8f0301d7b2414031b392da5566f98ce6": {
+     "best_block": "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0",
+     "best_bi": 0.23076923076923078
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_8f0301d7b2414031b392da5566f98ce6::runtime configuration examples (text yaml presented as code)::block_0",
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0",
+    "dsid_fb7405c885024a2f884d427388e22aa9::text::block_0",
+    "dsid_b1628ec022ad43129cd2e3fe9a2312e8::guiding principles::block_0",
+    "dsid_81ae941b22124a0d9393673e2ab231e7::high-level strategy::block_0",
+    "dsid_bf21ad0eb49b4029a000ef28cc5ae696::each dashboard must::block_0",
+    "dsid_8f0301d7b2414031b392da5566f98ce6::routing policy matrix (example)::block_0",
+    "dsid_b875b2c7d7404486832f7cf8b25ed483::responsibilities by component (short)::block_0",
+    "dsid_b858e6796955499290552ce14f81a760::product requirements (numbered)::block_0",
+    "dsid_7b38c161400c40be9e3992c94b81089f::diagram (text)::block_0",
+    "dsid_bf21ad0eb49b4029a000ef28cc5ae696::each dashboard must::block_1",
+    "dsid_66c9512574fc49a18cd0297c6b9e8f2f::summary::block_0",
+    "dsid_b07d61a112674554bc8677fe7cf2af86::example json route config::block_0",
+    "dsid_9c0ba7a19e064f39a4224f397e1bbb01::failure mode taxonomy (highest priority first)::block_0",
+    "dsid_8b2c4b7677e54b05bfa033581e4355b6::text::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_8f0301d7b2414031b392da5566f98ce6::operational contract (must-have requirements)::block_0": 2
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 50.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "1) Confirm alert provenance and scope\n   - Identify affected model_version(s), deployment type (hosted/dedicated/private), region, and traffic percent.\n   - Query shadow-runner and replay logs: `rwd-s"
+  },
+  {
+   "question_id": "qst_0405",
+   "question_type": "constrained",
+   "expected_doc_ids": [
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95"
+   ],
+   "expected_block_ids": [
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::functional requirements (must)::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0": [
+     0.227,
+     0.095
+    ],
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::what we collect and how to monitor::block_0": [
+     0.091,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::acceptance criteria (must pass to ship)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::aggregation / reconciliation output (csv columns)::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0": [
+     0.364,
+     0.286
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::appendices::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::b) example reconciliation json schema (signed)::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::background and motivation::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::billing and pricing implications::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::console ux requirements (high level)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::contact and ownership::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::document history::block_0": [
+     0.091,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::functional requirements (must)::block_0": [
+     0.455,
+     0.429
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::goals (what success looks like)::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::key stakeholders and owners::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::next steps (short term)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::non-functional requirements (must)::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::non-goals::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::open questions and decisions needed::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::risks and mitigations::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::rollout plan and milestones::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0": [
+     0.318,
+     0.19
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::security and privacy considerations::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::summary::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::telemetry, observability and monitoring::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::text::block_0": [
+     0.0,
+     0.0
+    ]
+   },
+   "doc_best": {
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5": {
+     "best_block": "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0",
+     "best_bi": 0.09523809523809523
+    },
+    "dsid_9964e71da61e4a92bf3f53699cabbf95": {
+     "best_block": "dsid_9964e71da61e4a92bf3f53699cabbf95::functional requirements (must)::block_0",
+     "best_bi": 0.42857142857142855
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0",
+    "dsid_e9a8fea5bc9e4ac6abf4e3120a032eba::parameters::block_0",
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::what we collect and how to monitor::block_0",
+    "dsid_b880d298b85f453eb588f5231c28ac17::api v1 summary::block_0",
+    "dsid_da85bdf3020d41ea9d29597562101f03::text::block_0",
+    "dsid_23536ec8adaf4ad2b751a7c18c39412f::telemetry model (required fields)::block_0",
+    "dsid_10f6a7ba8b2e43579f2d2ba74f36e33c::response header (json)::block_0",
+    "dsid_e9a8fea5bc9e4ac6abf4e3120a032eba::text::block_0",
+    "dsid_da85bdf3020d41ea9d29597562101f03::text::block_1",
+    "dsid_9a6b57f4f6634270a1c1cb53a6443f49::this schema is used by::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0",
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0",
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0",
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0",
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_b41df051e6dc46c48b36a99c366ee5c5::text::block_0": 1,
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::api / schema examples::block_0": 15,
+    "dsid_9964e71da61e4a92bf3f53699cabbf95::scope and major components::block_0": 14
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Hosted Inference: Cost-Fallback & Telemetry Normalization 1.2 Release Notes\n\nRelease 1.2 introduces the Cost-Fallback policy engine for hosted inference and a normalized telemetry pipeline for cost at"
+  },
+  {
+   "question_id": "qst_0439",
+   "question_type": "completeness",
+   "expected_doc_ids": [
+    "dsid_4e016427a93c49ffadd31fcdc1dca792",
+    "dsid_d3edd63b9ec54523ad12bd9be3d7e996",
+    "dsid_faf3246a6ce845e6b5df0ae52f439399",
+    "dsid_bf7e79dc1331447598c4eebdc5d2897d",
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f"
+   ],
+   "expected_block_ids": [
+    "dsid_4e016427a93c49ffadd31fcdc1dca792::text::block_0",
+    "dsid_d3edd63b9ec54523ad12bd9be3d7e996::text::block_0",
+    "dsid_faf3246a6ce845e6b5df0ae52f439399::text::block_0",
+    "dsid_bf7e79dc1331447598c4eebdc5d2897d::text::block_0",
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_4e016427a93c49ffadd31fcdc1dca792::text::block_0": [
+     0.538,
+     0.333
+    ],
+    "dsid_d3edd63b9ec54523ad12bd9be3d7e996::text::block_0": [
+     0.385,
+     0.167
+    ],
+    "dsid_d3edd63b9ec54523ad12bd9be3d7e996::we toggled a router policy flag::block_0": [
+     0.154,
+     0.0
+    ],
+    "dsid_faf3246a6ce845e6b5df0ae52f439399::text::block_0": [
+     0.308,
+     0.083
+    ],
+    "dsid_bf7e79dc1331447598c4eebdc5d2897d::text::block_0": [
+     0.385,
+     0.083
+    ],
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0": [
+     0.385,
+     0.083
+    ]
+   },
+   "doc_best": {
+    "dsid_4e016427a93c49ffadd31fcdc1dca792": {
+     "best_block": "dsid_4e016427a93c49ffadd31fcdc1dca792::text::block_0",
+     "best_bi": 0.3333333333333333
+    },
+    "dsid_d3edd63b9ec54523ad12bd9be3d7e996": {
+     "best_block": "dsid_d3edd63b9ec54523ad12bd9be3d7e996::text::block_0",
+     "best_bi": 0.16666666666666666
+    },
+    "dsid_faf3246a6ce845e6b5df0ae52f439399": {
+     "best_block": "dsid_faf3246a6ce845e6b5df0ae52f439399::text::block_0",
+     "best_bi": 0.08333333333333333
+    },
+    "dsid_bf7e79dc1331447598c4eebdc5d2897d": {
+     "best_block": "dsid_bf7e79dc1331447598c4eebdc5d2897d::text::block_0",
+     "best_bi": 0.08333333333333333
+    },
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f": {
+     "best_block": "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0",
+     "best_bi": 0.08333333333333333
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_da7d8f945d9b4cfdbfdb5923d0767865::evidence collection and scoring rubric::block_0",
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0",
+    "dsid_6a8960473c834e90937c940c221bf958::csr bridge handshake script (copy-paste during bridge)::block_0",
+    "dsid_72fa637ea122451f9c1c3e8ae861cc0a::text::block_1",
+    "dsid_ceb5472c6ffb4fa89a7a0a76f6d2c7cf::text::block_0",
+    "dsid_b2f5e5930f884726a10938a5ab9a7514::triage play (first 10 minutes)::block_0",
+    "dsid_dc80a70cbf894c16b51fc5b1fb4caca1::customer email / cs template (concise)::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_4e016427a93c49ffadd31fcdc1dca792::text::block_0",
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_a277ed2dc74c4bad82bc71b534b6356f::text::block_0": 2
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 20.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Postmortem: Hosted API latency spike and model fallback activation (2025-02-11)\n\nh2. Summary\nOn 2025-02-11, the Hosted API experienced elevated p95 latency on /v1/chat/completions for ~23 minutes. Mit"
+  },
+  {
+   "question_id": "qst_0441",
+   "question_type": "completeness",
+   "expected_doc_ids": [
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f",
+    "dsid_89889daf6b89426ca90049f313d4324f",
+    "dsid_e2327ad35ceb466489dad854770739bf",
+    "dsid_871b6712caf44f8bbfea4d8a15e436b6",
+    "dsid_80e095c2dc1745af86b80d24e27a9857",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1"
+   ],
+   "expected_block_ids": [
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0",
+    "dsid_89889daf6b89426ca90049f313d4324f::text::block_0",
+    "dsid_e2327ad35ceb466489dad854770739bf::provide these in the change record before requesting sign-off::block_0",
+    "dsid_871b6712caf44f8bbfea4d8a15e436b6::text::block_0",
+    "dsid_80e095c2dc1745af86b80d24e27a9857::use this sop when a planned change has any of::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::does not apply to::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::proceed only if all are true within 10 minutes::block_0": [
+     0.033,
+     0.005
+    ],
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::proceed only if all are true within 15 minutes::block_0": [
+     0.261,
+     0.065
+    ],
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0": [
+     0.646,
+     0.444
+    ],
+    "dsid_89889daf6b89426ca90049f313d4324f::sre review is required when the change::block_0": [
+     0.239,
+     0.067
+    ],
+    "dsid_89889daf6b89426ca90049f313d4324f::text::block_0": [
+     0.33,
+     0.125
+    ],
+    "dsid_e2327ad35ceb466489dad854770739bf::provide these in the change record before requesting sign-off::block_0": [
+     0.215,
+     0.053
+    ],
+    "dsid_e2327ad35ceb466489dad854770739bf::s&c sign-off is required for production changes that::block_0": [
+     0.079,
+     0.012
+    ],
+    "dsid_e2327ad35ceb466489dad854770739bf::security sign-off must be recorded in the change record as::block_0": [
+     0.019,
+     0.0
+    ],
+    "dsid_e2327ad35ceb466489dad854770739bf::text::block_0": [
+     0.074,
+     0.014
+    ],
+    "dsid_871b6712caf44f8bbfea4d8a15e436b6::sre will recommend go only if::block_0": [
+     0.16,
+     0.029
+    ],
+    "dsid_871b6712caf44f8bbfea4d8a15e436b6::text::block_0": [
+     0.304,
+     0.103
+    ],
+    "dsid_80e095c2dc1745af86b80d24e27a9857::text::block_0": [
+     0.086,
+     0.019
+    ],
+    "dsid_80e095c2dc1745af86b80d24e27a9857::use this sop when a planned change has any of::block_0": [
+     0.376,
+     0.18
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::applies to::block_0": [
+     0.036,
+     0.007
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0": [
+     0.435,
+     0.187
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::does not apply to::block_0": [
+     0.395,
+     0.163
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::escalation::block_0": [
+     0.172,
+     0.026
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::exception request must include::block_0": [
+     0.22,
+     0.055
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::retention guidance::block_0": [
+     0.026,
+     0.0
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::rollback trigger criteria (examples)::block_0": [
+     0.132,
+     0.017
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::success criteria::block_0": [
+     0.048,
+     0.007
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::text::block_0": [
+     0.103,
+     0.024
+    ],
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::within 2 business days of completion::block_0": [
+     0.156,
+     0.029
+    ]
+   },
+   "doc_best": {
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f": {
+     "best_block": "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0",
+     "best_bi": 0.44364508393285373
+    },
+    "dsid_89889daf6b89426ca90049f313d4324f": {
+     "best_block": "dsid_89889daf6b89426ca90049f313d4324f::text::block_0",
+     "best_bi": 0.12470023980815348
+    },
+    "dsid_e2327ad35ceb466489dad854770739bf": {
+     "best_block": "dsid_e2327ad35ceb466489dad854770739bf::provide these in the change record before requesting sign-off::block_0",
+     "best_bi": 0.05275779376498801
+    },
+    "dsid_871b6712caf44f8bbfea4d8a15e436b6": {
+     "best_block": "dsid_871b6712caf44f8bbfea4d8a15e436b6::text::block_0",
+     "best_bi": 0.10311750599520383
+    },
+    "dsid_80e095c2dc1745af86b80d24e27a9857": {
+     "best_block": "dsid_80e095c2dc1745af86b80d24e27a9857::use this sop when a planned change has any of::block_0",
+     "best_bi": 0.17985611510791366
+    },
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1": {
+     "best_block": "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0",
+     "best_bi": 0.18705035971223022
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_ea2e6c7e64d943b489fd9c0e8ec5c70d::text::block_0",
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0",
+    "dsid_c06f90f5cd2d4be8b5221ac2ecd9b318::text::block_0",
+    "dsid_1ec2fa8b9b814df8ae8d31c872ce471a::text::block_2",
+    "dsid_3cc6e840b1d542fcbf94a375d694fbaa::required::block_0",
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::proceed only if all are true within 15 minutes::block_0",
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::proceed only if all are true within 10 minutes::block_0",
+    "dsid_6626042e2e414e7785cd5e4f7fd96f48::checkpoint e (go/no-go)::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0",
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::does not apply to::block_0",
+    "dsid_89889daf6b89426ca90049f313d4324f::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_4bb945f3de9b4f6aa834d2941fae625f::text::block_0": 2,
+    "dsid_7f6bde5cefa543a7b1943ffaf5a8a9f1::create a change record (internal ticket) and attach/link::block_0": 3
+   },
+   "evidence_full_present": false,
+   "bucket": "judge_flip_or_gold_contradiction",
+   "majority_verdict": "yes",
+   "flipped_to_correct": true,
+   "doc_recall_pct": 33.33,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Private Deployments: Upgrade Go/No-Go Checklist (Enterprise)\n\n## Purpose\nThis checklist is the required go/no-go gate for upgrading an *enterprise* Redwood Private deployment (VPC or on-prem). It defi"
+  },
+  {
+   "question_id": "qst_0442",
+   "question_type": "completeness",
+   "expected_doc_ids": [
+    "dsid_319db001cae246bbbb16f441b64d9b82",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e",
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265",
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27",
+    "dsid_914d75cb27ee4a06b3f69e445d715ab4",
+    "dsid_81a7e3e0204d4c6984e0a503d5423314",
+    "dsid_bf7e0df04c8748458b5515c864c48609",
+    "dsid_190d9732b59b411d8a6bcc59fd61b309"
+   ],
+   "expected_block_ids": [
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0",
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0",
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0",
+    "dsid_914d75cb27ee4a06b3f69e445d715ab4::text::block_0",
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::include all of the following::block_0",
+    "dsid_bf7e0df04c8748458b5515c864c48609::text::block_0",
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_319db001cae246bbbb16f441b64d9b82::all production changes must::block_0": [
+     0.197,
+     0.06
+    ],
+    "dsid_319db001cae246bbbb16f441b64d9b82::answer these before requesting approval::block_0": [
+     0.182,
+     0.047
+    ],
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0": [
+     0.367,
+     0.162
+    ],
+    "dsid_319db001cae246bbbb16f441b64d9b82::within 60 minutes after completion, the change owner must::block_0": [
+     0.16,
+     0.029
+    ],
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::exemptions are allowed only when::block_0": [
+     0.105,
+     0.021
+    ],
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0": [
+     0.293,
+     0.109
+    ],
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::text::block_0": [
+     0.105,
+     0.01
+    ],
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0": [
+     0.391,
+     0.136
+    ],
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::text::block_0": [
+     0.059,
+     0.004
+    ],
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0": [
+     0.332,
+     0.121
+    ],
+    "dsid_914d75cb27ee4a06b3f69e445d715ab4::exemptions are allowed only for::block_0": [
+     0.102,
+     0.016
+    ],
+    "dsid_914d75cb27ee4a06b3f69e445d715ab4::text::block_0": [
+     0.258,
+     0.074
+    ],
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::after completion, publish a final update including::block_0": [
+     0.102,
+     0.021
+    ],
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::include all of the following::block_0": [
+     0.227,
+     0.07
+    ],
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::text::block_0": [
+     0.168,
+     0.055
+    ],
+    "dsid_bf7e0df04c8748458b5515c864c48609::if security review is required, attach or link to::block_0": [
+     0.156,
+     0.031
+    ],
+    "dsid_bf7e0df04c8748458b5515c864c48609::security review is recommended (but not required) when::block_0": [
+     0.061,
+     0.002
+    ],
+    "dsid_bf7e0df04c8748458b5515c864c48609::text::block_0": [
+     0.127,
+     0.033
+    ],
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::a change record is not closed until it includes::block_0": [
+     0.105,
+     0.023
+    ],
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::for any production change (successful or rolled back)::block_0": [
+     0.041,
+     0.008
+    ],
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0": [
+     0.25,
+     0.062
+    ],
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::text::block_0": [
+     0.148,
+     0.031
+    ]
+   },
+   "doc_best": {
+    "dsid_319db001cae246bbbb16f441b64d9b82": {
+     "best_block": "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0",
+     "best_bi": 0.162217659137577
+    },
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e": {
+     "best_block": "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0",
+     "best_bi": 0.10882956878850103
+    },
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265": {
+     "best_block": "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0",
+     "best_bi": 0.13552361396303902
+    },
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27": {
+     "best_block": "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0",
+     "best_bi": 0.12114989733059549
+    },
+    "dsid_914d75cb27ee4a06b3f69e445d715ab4": {
+     "best_block": "dsid_914d75cb27ee4a06b3f69e445d715ab4::text::block_0",
+     "best_bi": 0.07392197125256673
+    },
+    "dsid_81a7e3e0204d4c6984e0a503d5423314": {
+     "best_block": "dsid_81a7e3e0204d4c6984e0a503d5423314::include all of the following::block_0",
+     "best_bi": 0.06981519507186858
+    },
+    "dsid_bf7e0df04c8748458b5515c864c48609": {
+     "best_block": "dsid_bf7e0df04c8748458b5515c864c48609::text::block_0",
+     "best_bi": 0.03285420944558522
+    },
+    "dsid_190d9732b59b411d8a6bcc59fd61b309": {
+     "best_block": "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0",
+     "best_bi": 0.061601642710472276
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0",
+    "dsid_89889daf6b89426ca90049f313d4324f::text::block_0",
+    "dsid_c9e7302df4ad482aa4dedd5872a7ce2f::text::block_0",
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::text::block_0",
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0",
+    "dsid_5b1ccee63a71455aa0375e5a543ed529::only after confirming constraints::block_0",
+    "dsid_e99c9084da104083ab0778dfac0a2e7f::common triggers::block_0",
+    "dsid_319db001cae246bbbb16f441b64d9b82::all production changes must::block_0",
+    "dsid_fad128b2b0454c329eb8d8607d0a0230::this prd covers the hosted api mvp, including::block_1",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0",
+    "dsid_452dc45d76754cbca8a3674170599633::text::block_0",
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::text::block_0",
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0",
+    "dsid_b3e232fad2d341fb8c2abb2831e06e07::example request snippet (recommended pattern)::block_0",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::text::block_0",
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::for any production change (successful or rolled back)::block_0",
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0",
+    "dsid_fad128b2b0454c329eb8d8607d0a0230::text::block_0",
+    "dsid_bf7e0df04c8748458b5515c864c48609::if security review is required, attach or link to::block_0",
+    "dsid_5bbd2e7b2c314ca590d6b953d1a3c781::command examples (curl)::block_0",
+    "dsid_f6b4cb137c444b57bbd4a5d21843d240::this policy exists to::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0",
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0",
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0",
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0",
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0",
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0",
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0",
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::include all of the following::block_0",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0",
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0",
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0",
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0",
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::include all of the following::block_0",
+    "dsid_bf7e0df04c8748458b5515c864c48609::text::block_0",
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_319db001cae246bbbb16f441b64d9b82::text::block_0": 1,
+    "dsid_eca097630e444b2d8e30da4b08fcbc4e::for every production release you must be able to provide::block_0": 10,
+    "dsid_2ee4c1a35c5f4dba9b49efd3e97dd265::before you begin, confirm the following are true::block_0": 13,
+    "dsid_2db615f2f6f14cbfae67c62b3c976b27::text::block_0": 5,
+    "dsid_81a7e3e0204d4c6984e0a503d5423314::include all of the following::block_0": 40,
+    "dsid_190d9732b59b411d8a6bcc59fd61b309::rollback immediately if::block_0": 17
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 87.5,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Production Change Management Standard (v2)\n\nh1. Purpose\nThis policy defines what constitutes a production change at Redwood Inference and the minimum requirements to plan, approve, execute, and valida"
+  },
+  {
+   "question_id": "qst_0471",
+   "bucket": "no_expected_doc",
+   "note": "gold 无 expected_doc_ids"
+  }
+ ]
+}

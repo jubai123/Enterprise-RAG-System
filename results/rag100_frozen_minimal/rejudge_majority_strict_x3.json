@@ -1,0 +1,115 @@
+{
+ "run_name": "rag100_frozen_minimal",
+ "flavor": "strict",
+ "samples": 3,
+ "model": "deepseek-v4-flash",
+ "generated_at_utc": "2026-09-10T05:35:44+00:00",
+ "per_question": [
+  {
+   "question_id": "qst_0032",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0207",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0266",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0290",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0432",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0447",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  },
+  {
+   "question_id": "qst_0478",
+   "votes": [
+    "no",
+    "no",
+    "no"
+   ],
+   "yes": 0,
+   "no": 3,
+   "invalid": [],
+   "majority": "no",
+   "flipped_to_correct": false
+  }
+ ],
+ "summary": {
+  "run_name": "rag100_frozen_minimal",
+  "config": "configs/rag100_frozen_minimal.yaml",
+  "flavor": "strict",
+  "samples": 3,
+  "judged_questions": 7,
+  "raw_correctness_pct": null,
+  "raw_correct": null,
+  "n_flip_to_correct": 0,
+  "flips": [],
+  "ties": [],
+  "degraded": [],
+  "corrected_correctness_pct": null,
+  "corrected_correct": 0
+ }
+}

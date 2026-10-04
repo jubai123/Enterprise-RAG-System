@@ -1,0 +1,33 @@
+# frozen：45 题冻结集(held-out,从未参与调优)在 minimal 3 阶段管线上的评测。
+# 与 rag100_dev_minimal 同管线(CE top-6 + 父展开 + 宽上下文),唯一差异是 data 指向冻结集
+# (9 源)。索引为增量更新后的 enterprise_rag_bench(54690 dsid / 295034 chunk)。
+run_name: rag100_frozen_minimal
+
+data:
+  name: rag100_frozen
+  source_type: null
+  expected_questions: 45
+  gold_questions_file: data/raw/frozen45_questions.jsonl
+  questions_file: data/evaluation/rag100_frozen/questions.blind.jsonl
+  manifest_file: data/processed/all_documents.jsonl
+  source_scope: [github, confluence, jira, linear, slack, gmail, google_drive, hubspot, fireflies]
+  type_targets:
+    basic: 16
+    semantic: 11
+    intra_document_reasoning: 3
+    project_related: 3
+    constrained: 3
+    conflicting_info: 2
+    completeness: 2
+    miscellaneous: 2
+    high_level: 1
+    info_not_found: 2
+  selection_seed: 42
+
+retrieval:
+  single_document_budget: 6
+  chunks_per_document: 4
+
+graph:
+  mode: minimal
+

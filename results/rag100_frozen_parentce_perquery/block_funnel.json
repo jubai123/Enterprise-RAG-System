@@ -1,0 +1,1011 @@
+{
+ "schema_version": 1,
+ "context_top_k": 6,
+ "summary": {
+  "total_wrong": 8,
+  "bucket_counts": {
+   "judge_flip_or_gold_contradiction": 2,
+   "in_context_but_wrong": 3,
+   "retrieval_block_miss": 2,
+   "no_expected_doc": 1
+  },
+  "true_residual_generation": 3
+ },
+ "per_question": [
+  {
+   "question_id": "qst_0207",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_1653d1ed11a1403ca8e44bef03a610a9"
+   ],
+   "expected_block_ids": [
+    "dsid_1653d1ed11a1403ca8e44bef03a610a9::description::block_0",
+    "dsid_1653d1ed11a1403ca8e44bef03a610a9::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_1653d1ed11a1403ca8e44bef03a610a9::description::block_0": [
+     0.944,
+     0.882
+    ],
+    "dsid_1653d1ed11a1403ca8e44bef03a610a9::text::block_0": [
+     0.944,
+     0.882
+    ]
+   },
+   "doc_best": {
+    "dsid_1653d1ed11a1403ca8e44bef03a610a9": {
+     "best_block": "dsid_1653d1ed11a1403ca8e44bef03a610a9::description::block_0",
+     "best_bi": 0.8823529411764706
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_8e6ff5ddc64846c18e4f6b8710064c3c::operational notes::block_0",
+    "dsid_db879b45d29c479f802f39b7684fef31::text::block_1",
+    "dsid_2bf2ca0fb29f4da99557b3a8e6e019cc::text::block_0",
+    "dsid_db879b45d29c479f802f39b7684fef31::text::block_0",
+    "dsid_7de755a0d2ba4c78ad5757e106543d15::text::block_0",
+    "dsid_7b482b0745f24075a32814ebb2228576::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Motivation: customers using function/tool-calling and structured output have limited ability to correlate tool calls to per-route metrics, and streaming JSONL outputs lack stable tags for downstream l"
+  },
+  {
+   "question_id": "qst_0266",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_415b72b7d40a405e87b9671946e894d8"
+   ],
+   "expected_block_ids": [
+    "dsid_415b72b7d40a405e87b9671946e894d8::description::block_0",
+    "dsid_415b72b7d40a405e87b9671946e894d8::implementation notes::block_0",
+    "dsid_415b72b7d40a405e87b9671946e894d8::text::block_0",
+    "dsid_415b72b7d40a405e87b9671946e894d8::what this changes (high level)::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_415b72b7d40a405e87b9671946e894d8::description::block_0": [
+     0.35,
+     0.158
+    ],
+    "dsid_415b72b7d40a405e87b9671946e894d8::implementation notes::block_0": [
+     0.5,
+     0.368
+    ],
+    "dsid_415b72b7d40a405e87b9671946e894d8::text::block_0": [
+     0.35,
+     0.158
+    ],
+    "dsid_415b72b7d40a405e87b9671946e894d8::what this changes (high level)::block_0": [
+     0.45,
+     0.211
+    ]
+   },
+   "doc_best": {
+    "dsid_415b72b7d40a405e87b9671946e894d8": {
+     "best_block": "dsid_415b72b7d40a405e87b9671946e894d8::implementation notes::block_0",
+     "best_bi": 0.3684210526315789
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_db67892ba84b49e9ba64851d291f2e2d::text::block_0",
+    "dsid_ac5e40129fa2444eb1ca1c7aa057bfe2::text::block_0",
+    "dsid_ec2c2bdffdc541148d5125cfe0d19827::text::block_0",
+    "dsid_78858fe127c74c089714a948808ca7be::text::block_0",
+    "dsid_2b9b2a67968e431ba92959865150f97d::text::block_0",
+    "dsid_268eb6ee473245e28821de9202b8de8c::text::block_0"
+   ],
+   "expected_in_context": [],
+   "expected_in_ce_pool": [],
+   "expected_in_union_pool": [],
+   "expected_rank_in_ce_pool": {},
+   "evidence_full_present": false,
+   "bucket": "retrieval_block_miss",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 0.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "- Python: session_decorator.py implements an async generator wrapper that catches AuthExpired errors, triggers the provided credential_provider.refresh() and retries from a resume_token. Adds small co"
+  },
+  {
+   "question_id": "qst_0290",
+   "question_type": "semantic",
+   "expected_doc_ids": [
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c"
+   ],
+   "expected_block_ids": [
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0",
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0": [
+     0.647,
+     0.438
+    ],
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0": [
+     0.647,
+     0.438
+    ]
+   },
+   "doc_best": {
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c": {
+     "best_block": "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0",
+     "best_bi": 0.4375
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0",
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0",
+    "dsid_f2c3b068fef8487f874e3c3c90144c8c::text::block_0",
+    "dsid_432f00686c21443784e9c29c1faf7168::text::block_0",
+    "dsid_fc5e896d8eb4455fa9b186d04e0845f4::implementation notes::block_0",
+    "dsid_acded526a11f4ed8b211b9d5b6d4ad2f::checklist::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0",
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0",
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0",
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::description::block_0": 1,
+    "dsid_1b7a5d6230f84eb0a38a97da0e0ce05c::text::block_0": 2
+   },
+   "evidence_full_present": true,
+   "bucket": "judge_flip_or_gold_contradiction",
+   "majority_verdict": "yes",
+   "flipped_to_correct": true,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "This PR extends the model listing and capability endpoints to expose runtime hints (streaming stability hints, recommended kv-cache policies, batching/latency profiles), explicit compatibility flags f"
+  },
+  {
+   "question_id": "qst_0364",
+   "question_type": "project_related",
+   "expected_doc_ids": [
+    "dsid_5147667611a54584aa272d1469d8f6a7",
+    "dsid_23c10bc09bb345d987d7464224247263",
+    "dsid_5efc026a36144721a82af3dfb2dcdea8"
+   ],
+   "expected_block_ids": [
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0",
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_0",
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_1",
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::this spec applies to::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0": [
+     0.331,
+     0.171
+    ],
+    "dsid_5147667611a54584aa272d1469d8f6a7::description::block_0": [
+     0.315,
+     0.132
+    ],
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0": [
+     0.369,
+     0.178
+    ],
+    "dsid_5147667611a54584aa272d1469d8f6a7::resolution::block_0": [
+     0.262,
+     0.07
+    ],
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0": [
+     0.446,
+     0.256
+    ],
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_0": [
+     0.385,
+     0.171
+    ],
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_1": [
+     0.377,
+     0.163
+    ],
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_2": [
+     0.031,
+     0.016
+    ],
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::examples::block_0": [
+     0.246,
+     0.062
+    ],
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::format::block_0": [
+     0.023,
+     0.016
+    ],
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::minimum additional fields required on top of common schema::block_0": [
+     0.231,
+     0.039
+    ],
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::minimum additional fields required on top of common schema::block_1": [
+     0.338,
+     0.101
+    ],
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::text::block_0": [
+     0.115,
+     0.031
+    ],
+    "dsid_5efc026a36144721a82af3dfb2dcdea8::this spec applies to::block_0": [
+     0.415,
+     0.194
+    ]
+   },
+   "doc_best": {
+    "dsid_5147667611a54584aa272d1469d8f6a7": {
+     "best_block": "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0",
+     "best_bi": 0.2558139534883721
+    },
+    "dsid_23c10bc09bb345d987d7464224247263": {
+     "best_block": "dsid_23c10bc09bb345d987d7464224247263::text::block_0",
+     "best_bi": 0.17054263565891473
+    },
+    "dsid_5efc026a36144721a82af3dfb2dcdea8": {
+     "best_block": "dsid_5efc026a36144721a82af3dfb2dcdea8::this spec applies to::block_0",
+     "best_bi": 0.1937984496124031
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::description::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::resolution::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0",
+    "dsid_815f5fda19194239a8038ae82f7225c5::requested deliverables::block_0",
+    "dsid_cc1f4aff6499454399d35e3d5283d886::text::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_0",
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_1",
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_0",
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_1",
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0",
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_5147667611a54584aa272d1469d8f6a7::comments::block_0": 4,
+    "dsid_5147667611a54584aa272d1469d8f6a7::fix plan::block_0": 5,
+    "dsid_5147667611a54584aa272d1469d8f6a7::text::block_0": 1,
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_0": 6,
+    "dsid_23c10bc09bb345d987d7464224247263::text::block_1": 7
+   },
+   "evidence_full_present": false,
+   "bucket": "judge_flip_or_gold_contradiction",
+   "majority_verdict": "yes",
+   "flipped_to_correct": true,
+   "doc_recall_pct": 33.33,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Audit log export missing Optimization Config rollback event (Console/API rollback succeeds, no event in SIEM feed)\n\nIssue summary\nNorthbridge Analytics reports that Optimization Config rollback action"
+  },
+  {
+   "question_id": "qst_0375",
+   "question_type": "project_related",
+   "expected_doc_ids": [
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d",
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27",
+    "dsid_a6efecc786c9436499eb000b8489ae52",
+    "dsid_ab988030fc0c4544846f0e1f667453a3"
+   ],
+   "expected_block_ids": [
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::bulk rollback (multiple route ids)::block_0",
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0",
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::after any rollback action, confirm::block_0": [
+     0.141,
+     0.046
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::before making changes, gather::block_0": [
+     0.064,
+     0.009
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::bulk rollback (multiple route ids)::block_0": [
+     0.364,
+     0.169
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::capture and attach to the incident ticket::block_0": [
+     0.055,
+     0.009
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::classify the rollback scope::block_0": [
+     0.264,
+     0.064
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::confirm whether you are operating in::block_0": [
+     0.223,
+     0.068
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::do not re-enable during the same incident window without::block_0": [
+     0.064,
+     0.005
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::example query (pseudo)::block_0": [
+     0.027,
+     0.0
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::expected system behavior::block_0": [
+     0.145,
+     0.027
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::if recovery is not observed within 15 minutes::block_0": [
+     0.264,
+     0.078
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::pseudo-command (illustrative)::block_0": [
+     0.082,
+     0.009
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::query audit events::block_0": [
+     0.05,
+     0.009
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::text::block_0": [
+     0.323,
+     0.119
+    ],
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::when re-enabling::block_0": [
+     0.073,
+     0.005
+    ],
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0": [
+     0.35,
+     0.132
+    ],
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::text::block_0": [
+     0.35,
+     0.132
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0": [
+     0.245,
+     0.082
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::baseline must be::block_0": [
+     0.141,
+     0.027
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::compatibility is evaluated in two places::block_0": [
+     0.182,
+     0.046
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::during canary/beta, sre should configure alerts::block_0": [
+     0.1,
+     0.009
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::each request trace/log must include::block_0": [
+     0.027,
+     0.009
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::every request must have exactly one resolved outcome::block_0": [
+     0.245,
+     0.073
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::fallback must occur (and must be non-fatal) when::block_0": [
+     0.1,
+     0.009
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::guidance::block_0": [
+     0.191,
+     0.041
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::non-goals::block_0": [
+     0.173,
+     0.032
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::text::block_0": [
+     0.086,
+     0.014
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::the goals are::block_0": [
+     0.123,
+     0.018
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::the serving stack must emit::block_0": [
+     0.045,
+     0.0
+    ],
+    "dsid_a6efecc786c9436499eb000b8489ae52::to protect the model registry and avoid request amplification::block_0": [
+     0.264,
+     0.068
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0": [
+     0.282,
+     0.119
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::current status::block_0": [
+     0.286,
+     0.119
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::customer impact::block_0": [
+     0.059,
+     0.014
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::customer report (from cs email recap)::block_0": [
+     0.15,
+     0.018
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::customer-facing rollback guidance (provided)::block_0": [
+     0.136,
+     0.027
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::engineering actions taken::block_0": [
+     0.045,
+     0.009
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::environment::block_0": [
+     0.082,
+     0.009
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::escalation (applied ml / evals)::block_0": [
+     0.073,
+     0.005
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::evals guidance (provided to customer)::block_0": [
+     0.032,
+     0.0
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::initial findings (2025-03-07)::block_0": [
+     0.064,
+     0.005
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::issue summary::block_0": [
+     0.055,
+     0.009
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::notes::block_0": [
+     0.082,
+     0.014
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::references::block_0": [
+     0.036,
+     0.005
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::requested from customer (pending at time of filing)::block_0": [
+     0.055,
+     0.005
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::resolution summary::block_0": [
+     0.086,
+     0.023
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::root cause (confirmed 2025-03-08)::block_0": [
+     0.045,
+     0.014
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::support goals::block_0": [
+     0.1,
+     0.005
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::text::block_0": [
+     0.077,
+     0.009
+    ],
+    "dsid_ab988030fc0c4544846f0e1f667453a3::triage checklist (support)::block_0": [
+     0.118,
+     0.027
+    ]
+   },
+   "doc_best": {
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d": {
+     "best_block": "dsid_e5b1e464966a48bf9406e6e7197fee0d::bulk rollback (multiple route ids)::block_0",
+     "best_bi": 0.1689497716894977
+    },
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27": {
+     "best_block": "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0",
+     "best_bi": 0.1324200913242009
+    },
+    "dsid_a6efecc786c9436499eb000b8489ae52": {
+     "best_block": "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0",
+     "best_bi": 0.0821917808219178
+    },
+    "dsid_ab988030fc0c4544846f0e1f667453a3": {
+     "best_block": "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0",
+     "best_bi": 0.1187214611872146
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0",
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::text::block_0",
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::text::block_0",
+    "dsid_b6ba77d72e0e41fe82563675ee5a7a96::text::block_1",
+    "dsid_a2983978ba0d4d70a795eb7e13de8670::avoid ambiguous language::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::current status::block_0",
+    "dsid_2838f289e7474b42bf0d09804dc437ed::text::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0",
+    "dsid_d59f61916c8648e5a21bd73571a95ce7::what we know today (internal)::block_0",
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0",
+    "dsid_bfaf48524ffc40c9a90cade8fd2f3cbb::example (new)::block_0",
+    "dsid_f35f91f2d67c414a9d14d05c717907ca::every write to route quantization settings emits::block_0",
+    "dsid_a41836f345874d5398067b39f08302d8::alerts::block_0",
+    "dsid_ae52ba0e6a7545b594f56824e6a5be0b::automated abort criteria (example)::block_0",
+    "dsid_a2983978ba0d4d70a795eb7e13de8670::text::block_0",
+    "dsid_95f328867b564b0688d85743781cddfb::common quick mitigations (ordered by risk)::block_0",
+    "dsid_d97a869acd35489c8de7b0fd4c17b5c8::text::block_1",
+    "dsid_a348d0bd57fe4b8ab5fc493593561edc::summary of changes vs. previous practice::block_0",
+    "dsid_aeb0022d62bc43beb6549ba92e5655eb::roles & responsibilities (quick reference)::block_0",
+    "dsid_3562f76738da4687b0f68a14165321e9::body (shortened)::block_0",
+    "dsid_e1175b41fbcb4c29bf711482600ad64f::annotations::block_0",
+    "dsid_a6efecc786c9436499eb000b8489ae52::the goals are::block_0",
+    "dsid_d34152a13c7a4def864a13d9b1e2c989::pre-launch: decision criteria and gating::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::notes::block_0",
+    "dsid_c02fc85c31084bfeb63f45b5a282b201::when::block_0",
+    "dsid_733eada3751a482ca094dc7d693d94cc::billing mapping example table::block_0",
+    "dsid_d6aca85bfff24f7a99cbbb971da678e6::runbook template (use as header in each service runbook)::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0",
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0",
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0",
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0",
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0",
+    "dsid_e5b1e464966a48bf9406e6e7197fee0d::bulk rollback (multiple route ids)::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_b5a4ac6f13d545b6b085fb74e971ff27::body::block_0": 1,
+    "dsid_a6efecc786c9436499eb000b8489ae52::a profile must only be applied if::block_0": 10,
+    "dsid_ab988030fc0c4544846f0e1f667453a3::comments::block_0": 8
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "* Prefer scripted sequential updates to avoid rate limiting.\n* Confirm audit logging is enabled (required).\n\nh2. Verification for route-level rollback\nWithin 5–10 minutes:\n\n* Dashboards:\n  * enabled_r"
+  },
+  {
+   "question_id": "qst_0432",
+   "question_type": "completeness",
+   "expected_doc_ids": [
+    "dsid_a592f24d2f3b4c21ba507b20c832d069",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3",
+    "dsid_34f267b98745435b8d95e883b29ded9d",
+    "dsid_c4afa7bd5d104c43b45567c799121342",
+    "dsid_91abfa2001d747b3b570e8abce00ef4d"
+   ],
+   "expected_block_ids": [
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::comments::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::requested outcome::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::resolution::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::text::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::comments::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::requested outcome::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::comments::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::requested outcome::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::text::block_0",
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0",
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0",
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::comments::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::impact::block_0": [
+     0.083,
+     0.0
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::issue summary::block_0": [
+     0.25,
+     0.091
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::notes::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::requested outcome::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::resolution::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::steps to reproduce (from customer)::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::text::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::comments::block_0": [
+     0.333,
+     0.182
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::customer notes::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::impact::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::requested outcome::block_0": [
+     0.333,
+     0.182
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::resolution::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::text::block_0": [
+     0.167,
+     0.091
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::comments::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::details::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::impact::block_0": [
+     0.0,
+     0.0
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::issue summary::block_0": [
+     0.25,
+     0.091
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::requested outcome::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::resolution::block_0": [
+     0.083,
+     0.0
+    ],
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::text::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0": [
+     0.333,
+     0.182
+    ],
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0": [
+     0.25,
+     0.182
+    ],
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0": [
+     0.667,
+     0.545
+    ]
+   },
+   "doc_best": {
+    "dsid_a592f24d2f3b4c21ba507b20c832d069": {
+     "best_block": "dsid_a592f24d2f3b4c21ba507b20c832d069::comments::block_0",
+     "best_bi": 0.18181818181818182
+    },
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8": {
+     "best_block": "dsid_5e87f57f0e424a3a9e79a3032d63eab8::comments::block_0",
+     "best_bi": 0.18181818181818182
+    },
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3": {
+     "best_block": "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::comments::block_0",
+     "best_bi": 0.18181818181818182
+    },
+    "dsid_34f267b98745435b8d95e883b29ded9d": {
+     "best_block": "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0",
+     "best_bi": 0.18181818181818182
+    },
+    "dsid_c4afa7bd5d104c43b45567c799121342": {
+     "best_block": "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0",
+     "best_bi": 0.18181818181818182
+    },
+    "dsid_91abfa2001d747b3b570e8abce00ef4d": {
+     "best_block": "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0",
+     "best_bi": 0.5454545454545454
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0",
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0",
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::issue summary::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::issue summary::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0",
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0",
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::requested outcome::block_0",
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::requested outcome::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::text::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::requested outcome::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::resolution::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::text::block_0",
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::comments::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0",
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::requested outcome::block_0",
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::comments::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::requested outcome::block_0",
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::text::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::requested outcome::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::resolution::block_0",
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::text::block_0",
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::requested outcome::block_0": 8,
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::resolution::block_0": 12,
+    "dsid_a592f24d2f3b4c21ba507b20c832d069::text::block_0": 15,
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::issue summary::block_0": 6,
+    "dsid_5e87f57f0e424a3a9e79a3032d63eab8::requested outcome::block_0": 7,
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::requested outcome::block_0": 10,
+    "dsid_a45bf5a85c7948dda06a42fc9f8b3ae3::text::block_0": 19,
+    "dsid_34f267b98745435b8d95e883b29ded9d::text::block_0": 2,
+    "dsid_c4afa7bd5d104c43b45567c799121342::text::block_0": 3,
+    "dsid_91abfa2001d747b3b570e8abce00ef4d::text::block_0": 1
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 100.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "Ava Chen (Support): Looping in runtime + billing. Customer explicitly says: 'token accounting discrepancy' and wants a definitive explanation. Any known behavior with streaming reconnect?\nDev Patel (E"
+  },
+  {
+   "question_id": "qst_0447",
+   "question_type": "completeness",
+   "expected_doc_ids": [
+    "dsid_452dc45d76754cbca8a3674170599633",
+    "dsid_e5fe3fd0cf444668a64970ec00818f46",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c",
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e",
+    "dsid_6807c651b55546559733c7c6f8dc133d",
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5"
+   ],
+   "expected_block_ids": [
+    "dsid_452dc45d76754cbca8a3674170599633::record in ticket/pr/incident timeline::block_0",
+    "dsid_e5fe3fd0cf444668a64970ec00818f46::text::block_0",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0",
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::for any production hotfix artifact::block_0",
+    "dsid_6807c651b55546559733c7c6f8dc133d::roll back immediately if any occur::block_0",
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0"
+   ],
+   "cov_by_block": {
+    "dsid_452dc45d76754cbca8a3674170599633::additional approvals based on scenario::block_0": [
+     0.06,
+     0.013
+    ],
+    "dsid_452dc45d76754cbca8a3674170599633::record in ticket/pr/incident timeline::block_0": [
+     0.232,
+     0.072
+    ],
+    "dsid_452dc45d76754cbca8a3674170599633::text::block_0": [
+     0.206,
+     0.053
+    ],
+    "dsid_452dc45d76754cbca8a3674170599633::within 2 business days::block_0": [
+     0.043,
+     0.015
+    ],
+    "dsid_e5fe3fd0cf444668a64970ec00818f46::avoid::block_0": [
+     0.002,
+     0.0
+    ],
+    "dsid_e5fe3fd0cf444668a64970ec00818f46::each update must include::block_0": [
+     0.06,
+     0.023
+    ],
+    "dsid_e5fe3fd0cf444668a64970ec00818f46::if impact is isolated to one or more dedicated clusters::block_0": [
+     0.181,
+     0.045
+    ],
+    "dsid_e5fe3fd0cf444668a64970ec00818f46::text::block_0": [
+     0.204,
+     0.064
+    ],
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::in the incident channel, post::block_0": [
+     0.245,
+     0.083
+    ],
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0": [
+     0.304,
+     0.142
+    ],
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::validation checklist (record results in pr)::block_0": [
+     0.081,
+     0.021
+    ],
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::artifacts produced::block_0": [
+     0.011,
+     0.0
+    ],
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::before rollout, verify signatures::block_0": [
+     0.098,
+     0.019
+    ],
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::for any production hotfix artifact::block_0": [
+     0.111,
+     0.023
+    ],
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::text::block_0": [
+     0.049,
+     0.011
+    ],
+    "dsid_6807c651b55546559733c7c6f8dc133d::canary pass thresholds::block_0": [
+     0.132,
+     0.028
+    ],
+    "dsid_6807c651b55546559733c7c6f8dc133d::default order for runtime hotfix rollouts::block_0": [
+     0.074,
+     0.017
+    ],
+    "dsid_6807c651b55546559733c7c6f8dc133d::monitor for 15 minutes minimum::block_0": [
+     0.034,
+     0.017
+    ],
+    "dsid_6807c651b55546559733c7c6f8dc133d::roll back immediately if any occur::block_0": [
+     0.191,
+     0.068
+    ],
+    "dsid_6807c651b55546559733c7c6f8dc133d::text::block_0": [
+     0.126,
+     0.026
+    ],
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0": [
+     0.383,
+     0.168
+    ],
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::if rollback triggers are met::block_0": [
+     0.113,
+     0.021
+    ],
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::text::block_0": [
+     0.136,
+     0.025
+    ]
+   },
+   "doc_best": {
+    "dsid_452dc45d76754cbca8a3674170599633": {
+     "best_block": "dsid_452dc45d76754cbca8a3674170599633::record in ticket/pr/incident timeline::block_0",
+     "best_bi": 0.07183364839319471
+    },
+    "dsid_e5fe3fd0cf444668a64970ec00818f46": {
+     "best_block": "dsid_e5fe3fd0cf444668a64970ec00818f46::text::block_0",
+     "best_bi": 0.06427221172022685
+    },
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c": {
+     "best_block": "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0",
+     "best_bi": 0.14177693761814744
+    },
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e": {
+     "best_block": "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::for any production hotfix artifact::block_0",
+     "best_bi": 0.022684310018903593
+    },
+    "dsid_6807c651b55546559733c7c6f8dc133d": {
+     "best_block": "dsid_6807c651b55546559733c7c6f8dc133d::roll back immediately if any occur::block_0",
+     "best_bi": 0.06805293005671077
+    },
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5": {
+     "best_block": "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0",
+     "best_bi": 0.16824196597353497
+    }
+   },
+   "no_lexical_evidence": false,
+   "context_source": "answer_chunk_ids",
+   "cited_block_ids": [
+    "dsid_c9e7302df4ad482aa4dedd5872a7ce2f::text::block_0",
+    "dsid_42aad55e1b9848b7944b7437e7b8339e::text::block_0",
+    "dsid_e2c43ae0190d4b22b77fd7cef28719c4::rollback plan::block_0",
+    "dsid_dc80a70cbf894c16b51fc5b1fb4caca1::customer email / cs template (concise)::block_0",
+    "dsid_6e67e8cf2f0a411b826b14c382c783f1::text::block_1",
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0",
+    "dsid_538be95952e64be59c342d9d2c076382::include::block_0",
+    "dsid_840703a1cc37438a84e9beb68029d80b::text::block_0",
+    "dsid_452dc45d76754cbca8a3674170599633::text::block_0",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::in the incident channel, post::block_0",
+    "dsid_c6ec6df4e6d34c68aebead677ba51548::rollout procedure (concrete steps)::block_0",
+    "dsid_f6e3b7ad413142019dbb5a5fed07f548::hosted verification queries (console)::block_0",
+    "dsid_72fa637ea122451f9c1c3e8ae861cc0a::text::block_1",
+    "dsid_95b5d04053894fa69aabdfd517b07777::text::block_0",
+    "dsid_ef5b9b3a9239469e85ed08aaa8e0dbc7::api example patterns (what to show and why)::block_0",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0",
+    "dsid_c7926d576d244b9098274778fcc84b87::text::block_0",
+    "dsid_5bbd2e7b2c314ca590d6b953d1a3c781::command examples (curl)::block_0"
+   ],
+   "expected_in_context": [
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0"
+   ],
+   "expected_in_ce_pool": [
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0",
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::for any production hotfix artifact::block_0",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0"
+   ],
+   "expected_in_union_pool": [
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0",
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::for any production hotfix artifact::block_0",
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0"
+   ],
+   "expected_rank_in_ce_pool": {
+    "dsid_ac2fdba09cc24cd98ba60f5da114780c::text::block_0": 16,
+    "dsid_8c3d5e26a1c841199d3bcd7aea5d495e::for any production hotfix artifact::block_0": 25,
+    "dsid_5d509e588f994166a2ccc6e39cbf6cb5::before scheduling a dedicated hotfix rollout, gather::block_0": 6
+   },
+   "evidence_full_present": false,
+   "bucket": "in_context_but_wrong",
+   "majority_verdict": "no",
+   "flipped_to_correct": false,
+   "doc_recall_pct": 50.0,
+   "old_dsid_cause": "",
+   "evidence_snippet": "* Hypothesis for the fix\n* Blast radius (Hosted regions; Dedicated clusters/customers; model families)\n* Rollback plan with explicit trigger (metric or customer symptom)\n* Risk assessment: data integr"
+  },
+  {
+   "question_id": "qst_0478",
+   "bucket": "no_expected_doc",
+   "note": "gold 无 expected_doc_ids"
+  }
+ ]
+}

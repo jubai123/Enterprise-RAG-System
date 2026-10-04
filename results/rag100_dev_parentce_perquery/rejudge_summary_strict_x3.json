@@ -1,0 +1,19 @@
+{
+ "run_name": "rag100_dev_parentce_perquery",
+ "config": "configs/rag100_dev_parentce_perquery.yaml",
+ "flavor": "strict",
+ "samples": 3,
+ "judged_questions": 29,
+ "raw_correctness_pct": 71.0,
+ "raw_correct": 71,
+ "n_flip_to_correct": 3,
+ "flips": [
+  "qst_0327",
+  "qst_0358",
+  "qst_0441"
+ ],
+ "ties": [],
+ "degraded": [],
+ "corrected_correctness_pct": 74.0,
+ "corrected_correct": 74
+}

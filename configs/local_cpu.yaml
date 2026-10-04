@@ -1,0 +1,7 @@
+cross_encoder:
+  device: cpu
+  batch_size: 16
+  # 在线模式（provider=online）下 device 与 batch_size 不参与重排序打分；
+  # 仅回退到本地 sentence-transformers 时生效。CPU 上长候选集的 rerank
+  # 可能超过默认 120s，放宽到 10 分钟。
+  predict_timeout_seconds: 600
